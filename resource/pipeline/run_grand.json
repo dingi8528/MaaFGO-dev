@@ -1,0 +1,265 @@
+{
+    "冠位戴冠战-职介": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "grand_lancer.png"
+                ]
+            }
+        },
+        "timeout": 2000,
+        "next": [
+            "冠位戴冠战-进入副本"
+        ]
+    },
+    "右侧下滑-冠位戴冠战列表": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    925,
+                    354,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        929,
+                        30,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "max_hit": 10
+    },
+    "冠位戴冠战-查找职介": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "grand_down.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        }
+    },
+    "冠位戴冠战列表": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "grand001.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 2000,
+        "next": [
+            "冠位戴冠战-职介开始"
+        ]
+    },
+    "冠位戴冠战-开始": {
+        "next": [
+            "冠位戴冠战列表",
+            "[JumpBack]右侧下滑-冠位戴冠战列表",
+            "未找到戴冠战入口"
+        ]
+    },
+    "未找到戴冠战入口": {
+        "max_hit": 10,
+        "focus": {
+            "Node.Recognition.Starting": "未找到戴冠战入口！脚本中止"
+        }
+    },
+    "冠位戴冠战-职介开始": {
+        "post_delay": 3000,
+        "next": [
+            "冠位戴冠战-职介",
+            "[JumpBack]冠位戴冠战-查找职介",
+            "未找到戴冠战入口2"
+        ]
+    },
+    "冠位戴冠战-进入副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "grand_enter.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "冠位戴冠战-等级副本",
+            "[JumpBack]右侧下滑2",
+            "[JumpBack]右侧上滑1",
+            "未找到戴冠战入口3",
+            "[JumpBack]右侧下滑3"
+        ]
+    },
+    "未找到戴冠战入口2": {
+        "max_hit": 10,
+        "focus": {
+            "Node.Recognition.Starting": "未找到对应职介！脚本中止"
+        }
+    },
+    "右侧下滑2": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    925,
+                    354,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        929,
+                        150,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "max_hit": 10,
+        "post_delay": 2000
+    },
+    "冠位戴冠战-等级副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "grand_100+++.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 2000,
+        "next": [
+            "冠位戴冠战-进入1"
+        ]
+    },
+    "未找到戴冠战入口3": {
+        "max_hit": 10,
+        "focus": {
+            "Node.Recognition.Starting": "未找到对应等级副本！脚本中止"
+        }
+    },
+    "冠位戴冠战-进入1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "dungeon_enter.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 5000,
+        "next": [
+            "冠位戴冠战-BBC脚本运行"
+        ]
+    },
+    "冠位戴冠战-BBC脚本运行": {
+        "action": {
+            "type": "Command",
+            "param": {
+                "exec": "run_bbc\\run_bbc.exe",
+                "detach": true
+            }
+        },
+        "post_delay": 60000,
+        "focus": {
+            "Node.Recognition.Starting": "打开BBC中，请尽量不要移动鼠标，并将bbc窗口置于主屏幕",
+            "Node.Action.Succeeded": "等待任务完成，BBC正常运行后，可以自由操作。"
+        },
+        "next": [
+            "冠位戴冠战-完成"
+        ]
+    },
+    "冠位戴冠战-完成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "grand_ap_0.png"
+                ]
+            }
+        },
+        "rate_limit": 5000,
+        "timeout": 99999999,
+        "focus": {
+            "Node.Recognition.Succeeded": "任务完成",
+            "Node.Recognition.Failed": "没有识别到任务完成"
+        }
+    },
+    "右侧上滑1": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    925,
+                    150,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        929,
+                        354,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "max_hit": 10,
+        "post_delay": 2000
+    },
+    "右侧下滑3": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    925,
+                    354,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        929,
+                        150,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "max_hit": 10,
+        "post_delay": 2000
+    }
+}

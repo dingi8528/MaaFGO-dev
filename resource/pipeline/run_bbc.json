@@ -1,0 +1,10 @@
+{
+    "运行BBC": {
+        "action": {
+            "type": "Command",
+            "param": {
+                "exec": "F:\\BBchannel\\启动.cmd"
+            }
+        }
+    }
+}

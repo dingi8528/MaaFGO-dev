@@ -1,0 +1,319 @@
+{
+    // 本文件主要定义了通用 UI 的行为和显示内容
+    // 可参考文档和示例添加更多您需要的功能
+    // 文档：https://maafw.xyz/docs/3.3-ProjectInterfaceV2
+    // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
+    "interface_version": 2,
+    "name": "MaaXXX",
+    "description": "这是一个使用 MaaFramework 创建的新项目。",
+    "contact": "QQ群: 123456789",
+    "license": "MIT",
+    "welcome": "首次使用！欢迎使用 MAA!",
+    // 填写项目地址和版本号可实现自动更新功能
+    "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
+    "version": "1.0.0",
+    // Mirror酱为第三方分发服务，新项目默认关闭
+    // 若有需要请联系 Mirror酱 开通，直接自行开启是无法使用的
+    // "mirrorchyan_rid": "MaaXXX",
+    // "mirrorchyan_multiplatform": true,
+    "controller": [
+        {
+            "name": "安卓端",
+            "type": "Adb",
+            "display_short_side": 720 // 默认缩放分辨率的短边长度
+        },
+        {
+            "name": "桌面端-暂不支持",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "BBchannel",
+                // 截图及控制方式，请根据项目实际情况修改
+                // 文档: https://maafw.xyz/docs/2.4-ControlMethods
+                "screencap": "PrintWindow", // 截图方式
+                "mouse": "LegacyEvent", // 鼠标控制方式
+                "keyboard": "PostMessageWithCursorPos" // 键盘控制方式
+            }
+        }
+    ],
+    "resource": [
+        {
+            "name": "日服",
+            "path": [
+                "./resource"
+            ]
+        },
+        {
+            "name": "国服B服",
+            "path": [
+                "./resource",
+                "./resource_bilibili"
+            ]
+        }
+    ],
+    // 可选的 agent 示例
+    // "agent": {
+    //     "child_exec": "python",
+    //     "child_args": [
+    //         "./agent/main.py"
+    //     ]
+    // },
+    "task": [
+        {
+            "name": "打开bbc",
+            "entry": "运行BBC",
+            "option": [
+                "bbc路径"
+            ],
+            "description": "### 形式例如：\"F:\\BBchannel\\启动.cmd\"，不用带双引号 \n### 填写完可以运行一下看看BBC有没有正常打开 \n### 建议把打开bbc放到第一步 \n### bbc需要在设置里勾选【启动时自动连接前次设备】，并且将正确的队伍放到第一位"
+        },
+        {
+            "name": "启动游戏",
+            "entry": "启动FGO",
+            "option": [
+                "选择服务器"
+            ],
+            "description": "不会自己打开模拟器，请在模拟器运行后再开始"
+        },
+        {
+            "name": "冠位戴冠战",
+            "entry": "冠位戴冠战-开始",
+            "option": [
+                "选择冠位职介",
+                "选择难度"
+            ]
+        }
+
+    ],
+    "option": {
+        "选择服务器": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "日服",
+                    "pipeline_override": {
+                        "启动FGO": {
+                            "action": {
+                                "type": "StartApp",
+                                "param": {
+                                    "package": "com.aniplex.fategrandorder"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "国服B服-未完成-可测试启动游戏",
+                    "pipeline_override": {
+                        "启动FGO": {
+                            "action": {
+                                "type": "StartApp",
+                                "param": {
+                                    "package": "com.bilibili.fatego"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "选择冠位职介": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "剑",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_saber.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "弓",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_archer.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "枪",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_lancer.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "骑",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_rider.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "术",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_caster.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "杀",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_assassin.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "狂",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_berserker.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "EX1",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_ex1.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "EX2",
+                    "pipeline_override": {
+                        "冠位戴冠战-职介": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_ex2.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "选择难度": {
+            "type": "select",
+            "cases": [
+                {
+                    "name": "100⭐⭐",
+                    "pipeline_override": {
+                        "冠位戴冠战-等级副本": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_100++.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "100⭐⭐⭐",
+                    "pipeline_override": {
+                        "冠位戴冠战-等级副本": {
+                            "recognition": {
+                                "type": "TemplateMatch",
+                                "param": {
+                                    "template": [
+                                        "grand_100+++.png"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "bbc路径": {
+            "type": "input", // 用户输入类型
+            "label": "复制路径名",
+            "description": "形式例如：\"F:\\BBchannel\\启动.cmd\",请勿复制快捷方式路径", // 描述，应支持 文件名、URL、字符串，同时内容支持 markdown，支持国际化
+            "inputs": [
+                {
+                    "name": "路径",
+                    "label": "$路径", // 显示名称，支持国际化。优先显示label，未设置时显示name
+                    "description": "形式例如：\"F:\\BBchannel\\启动.cmd\",请勿复制快捷方式路径，不用带双引号", // 描述，应支持 文件名、URL、字符串，同时内容支持 markdown，支持国际化
+                    "pipeline_type": "string", // 拼接到 pipeline_override 中的类型
+                }
+            ],
+            "pipeline_override": {
+                "运行BBC": {
+                    "action": {
+                        "type": "Command",
+                        "param": {
+                            "exec": "{路径}"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
