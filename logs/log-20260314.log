@@ -4700,3 +4700,286 @@ F:\Game_AUTO\MaaFGO\MFAAvalonia-v2.10.9-win-x64\resource
 [2026-03-14 19:29:15.207][INF] >>> 任务 播放音频 完成.
 [2026-03-14 19:29:15.213][INF] 任务已全部完成！
 (用时 0h 1m 23s)
+[2026-03-14 19:41:50.191][INF] [内存管理]释放了7.95 MB (16.8%)
+[2026-03-14 19:46:50.223][INF] [内存管理]释放了13.20 MB (25.1%)
+[2026-03-14 19:51:50.249][INF] [内存管理]释放了3.33 MB (7.9%)
+[2026-03-14 19:56:50.273][INF] [内存管理]释放了2.63 MB (6.3%)
+[2026-03-14 20:01:50.295][INF] [内存管理]释放了1.88 MB (4.6%)
+[2026-03-14 20:06:50.325][INF] [内存管理]释放了2.39 MB (6.0%)
+[2026-03-14 20:11:50.348][INF] [内存管理]释放了1.98 MB (5.1%)
+[2026-03-14 20:16:50.367][INF] [内存管理]释放了2.04 MB (5.2%)
+[2026-03-14 20:21:50.391][INF] [内存管理]释放了1.59 MB (4.1%)
+[2026-03-14 20:26:50.411][INF] [内存管理]释放了1.26 MB (3.3%)
+[2026-03-14 20:31:50.432][INF] [内存管理]释放了1.19 MB (3.1%)
+[2026-03-14 20:36:50.458][INF] [内存管理]释放了1.28 MB (3.3%)
+[2026-03-14 20:45:25.416][INF] 截图超时，已断开连接
+[2026-03-14 20:51:50.598][INF] [内存管理]释放了7.63 MB (17.0%)
+[2026-03-14 21:06:50.849][INF] [内存管理]释放了12.94 MB (25.8%)
+[2026-03-14 21:16:51.023][INF] [内存管理]释放了12.28 MB (24.8%)
+[2026-03-14 21:26:51.224][INF] [内存管理]释放了13.97 MB (27.3%)
+[2026-03-14 21:36:51.324][INF] [内存管理]释放了14.91 MB (28.6%)
+[2026-03-14 21:46:51.358][INF] [内存管理]释放了13.43 MB (26.5%)
+[2026-03-14 21:56:51.393][INF] [内存管理]释放了13.44 MB (26.5%)
+[2026-03-14 22:06:51.421][INF] [内存管理]释放了15.98 MB (30.0%)
+[2026-03-14 22:16:51.453][INF] [内存管理]释放了14.55 MB (28.2%)
+[2026-03-14 22:26:51.487][INF] [内存管理]释放了11.50 MB (23.7%)
+[2026-03-14 22:36:51.515][INF] [内存管理]释放了12.69 MB (25.5%)
+[2026-03-14 22:46:51.548][INF] [内存管理]释放了10.79 MB (22.6%)
+[2026-03-14 22:56:51.580][INF] [内存管理]释放了9.78 MB (20.9%)
+[2026-03-14 23:06:51.614][INF] [内存管理]释放了12.56 MB (25.3%)
+[2026-03-14 23:16:51.644][INF] [内存管理]释放了10.05 MB (21.4%)
+[2026-03-14 23:31:51.728][INF] [内存管理]释放了6.66 MB (15.3%)
+[2026-03-14 23:41:51.886][INF] [内存管理]释放了11.26 MB (23.3%)
+[2026-03-14 23:50:02.936][INF] MFA Closed!
+[2026-03-14 23:52:50.206][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia-v2.10.9-win-x64\libs
+[2026-03-14 23:52:50.224][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-14 23:52:50.243][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia-v2.10.9-win-x64\\runtimes\\win-x64\\native"
+]
+[2026-03-14 23:52:50.245][INF] Args: {}
+[2026-03-14 23:52:50.245][INF] MFA version: v2.10.9
+[2026-03-14 23:52:50.245][INF] .NET version: .NET 10.0.3
+[2026-03-14 23:52:50.713][INF] Initializing LanguageManager...
+[2026-03-14 23:52:50.815][INF] Loading Configurations...
+[2026-03-14 23:52:50.836][INF] Current Configuration: Default
+[2026-03-14 23:52:50.896][INF] System sleep allowed.
+[2026-03-14 23:52:50.899][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-14 23:52:50.899][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-14 23:52:50.904][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-14 23:52:50.904][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-14 23:52:50.948][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-14 23:52:50.954][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-14 23:52:51.001][INF] Resource version: 1.0.0
+[2026-03-14 23:52:51.001][INF] MaaFramework version: v5.8.1
+[2026-03-14 23:52:51.025][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-14 23:52:51.080][INF] 窗口大小已加载: width=1908, height=1029
+[2026-03-14 23:52:51.087][INF] 窗口位置已加载: X=355, Y=256
+[2026-03-14 23:52:51.275][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-14 23:52:51.311][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-14 23:52:51.421][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-14 23:52:51.423][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-14 23:52:51.815][INF] [懒加载] 所有实例加载完成
+[2026-03-14 23:52:51.816][INF] [懒加载] 所有实例加载完成
+[2026-03-14 23:52:51.855][INF] UI initialization started
+[2026-03-14 23:52:52.229][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-14 23:52:52.542][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-14 23:52:52.543][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-14 23:52:52.704][INF] No matching device found by fingerprint, performing auto detection.
+[2026-03-14 23:52:52.911][INF] [TaskPipelineMerge] Task#1 Name=[打开bbc] Entry=[运行BBC] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  }
+]
+[2026-03-14 23:52:52.911][INF] [TaskPipelineMerge] Task#2 Name=[启动游戏] Entry=[启动FGO] PipelineList=[
+  {},
+  {
+    "启动FGO": {
+      "action": {
+        "type": "StartApp",
+        "param": {
+          "package": "com.aniplex.fategrandorder"
+        }
+      }
+    }
+  }
+]
+[2026-03-14 23:52:52.912][INF] [TaskPipelineMerge] Task#3 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-14 23:52:52.980][INF] MFA异步任务 启动任务 开始.
+[2026-03-14 23:52:52.982][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-14 23:52:52.983][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-14 23:52:52.983][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-14 23:52:52.986][INF] 正在连接至模拟器......
+[2026-03-14 23:52:53.319][INF] 正在载入资源
+[2026-03-14 23:52:53.319][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia-v2.10.9-win-x64\resource
+[2026-03-14 23:52:53.319][INF] MFA异步任务 资源检测 开始.
+[2026-03-14 23:52:53.400][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-14 23:52:53.401][INF] Use GPU: succeed
+[2026-03-14 23:52:53.401][INF] GPU acceleration: Auto
+[2026-03-14 23:52:53.401][INF] MFA异步任务 控制器检测 开始.
+[2026-03-14 23:52:53.401][INF] Loading MAA Controller Configuration...
+[2026-03-14 23:52:53.403][INF] 触控模式:Default,捕获模式:Default
+[2026-03-14 23:52:53.403][INF] Name: 
+[2026-03-14 23:52:53.403][INF] AdbPath: adb
+[2026-03-14 23:52:53.403][INF] AdbSerial: 
+[2026-03-14 23:52:53.403][INF] ScreenCap: Default
+[2026-03-14 23:52:53.403][INF] Input: Default
+[2026-03-14 23:52:53.403][INF] Config: {}
+[2026-03-14 23:52:53.404][WRN] 初始化控制器时发生错误！
+[2026-03-14 23:52:53.409][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'info.AdbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(AdbDeviceInfo info, LinkOption link, CheckStatusOption check)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.InitializeController(MaaControllerTypes controllerType, Boolean logConfig)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass128_0.<InitializeMaaTasker>b__7()
+   at MFAAvalonia.Helper.TaskManager.<>c__DisplayClass4_0`1.<RunTaskAsync>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog, Boolean noMessage)
+[2026-03-14 23:52:53.409][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-14 23:52:53.409][WRN] Controller initialization returned null, aborting current connection attempt.
+[2026-03-14 23:52:53.412][INF] [Record] 连接失败
+正在尝试重连
+[2026-03-14 23:52:53.412][INF] 正在载入资源
+[2026-03-14 23:52:53.412][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia-v2.10.9-win-x64\resource
+[2026-03-14 23:52:53.412][INF] MFA异步任务 资源检测 开始.
+[2026-03-14 23:52:53.434][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-14 23:52:53.435][INF] Use GPU: succeed
+[2026-03-14 23:52:53.435][INF] GPU acceleration: Auto
+[2026-03-14 23:52:53.435][INF] MFA异步任务 控制器检测 开始.
+[2026-03-14 23:52:53.435][INF] Loading MAA Controller Configuration...
+[2026-03-14 23:52:53.435][INF] 触控模式:Default,捕获模式:Default
+[2026-03-14 23:52:53.435][INF] Name: 
+[2026-03-14 23:52:53.435][INF] AdbPath: adb
+[2026-03-14 23:52:53.435][INF] AdbSerial: 
+[2026-03-14 23:52:53.435][INF] ScreenCap: Default
+[2026-03-14 23:52:53.435][INF] Input: Default
+[2026-03-14 23:52:53.435][INF] Config: {}
+[2026-03-14 23:52:53.436][WRN] 初始化控制器时发生错误！
+[2026-03-14 23:52:53.436][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'info.AdbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(AdbDeviceInfo info, LinkOption link, CheckStatusOption check)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.InitializeController(MaaControllerTypes controllerType, Boolean logConfig)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass128_0.<InitializeMaaTasker>b__7()
+   at MFAAvalonia.Helper.TaskManager.<>c__DisplayClass4_0`1.<RunTaskAsync>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog, Boolean noMessage)
+[2026-03-14 23:52:53.437][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-14 23:52:53.437][WRN] Controller initialization returned null, aborting current connection attempt.
+[2026-03-14 23:52:53.444][INF] [Record] 连接失败
+正在尝试重启 ADB Server
+[2026-03-14 23:52:53.504][INF] 正在载入资源
+[2026-03-14 23:52:53.504][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia-v2.10.9-win-x64\resource
+[2026-03-14 23:52:53.504][INF] MFA异步任务 资源检测 开始.
+[2026-03-14 23:52:53.528][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-14 23:52:53.528][INF] Use GPU: succeed
+[2026-03-14 23:52:53.528][INF] GPU acceleration: Auto
+[2026-03-14 23:52:53.528][INF] MFA异步任务 控制器检测 开始.
+[2026-03-14 23:52:53.528][INF] Loading MAA Controller Configuration...
+[2026-03-14 23:52:53.528][INF] 触控模式:Default,捕获模式:Default
+[2026-03-14 23:52:53.528][INF] Name: 
+[2026-03-14 23:52:53.528][INF] AdbPath: adb
+[2026-03-14 23:52:53.528][INF] AdbSerial: 
+[2026-03-14 23:52:53.528][INF] ScreenCap: Default
+[2026-03-14 23:52:53.528][INF] Input: Default
+[2026-03-14 23:52:53.528][INF] Config: {}
+[2026-03-14 23:52:53.529][WRN] 初始化控制器时发生错误！
+[2026-03-14 23:52:53.529][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'info.AdbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(AdbDeviceInfo info, LinkOption link, CheckStatusOption check)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.InitializeController(MaaControllerTypes controllerType, Boolean logConfig)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass128_0.<InitializeMaaTasker>b__7()
+   at MFAAvalonia.Helper.TaskManager.<>c__DisplayClass4_0`1.<RunTaskAsync>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog, Boolean noMessage)
+[2026-03-14 23:52:53.529][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-14 23:52:53.529][WRN] Controller initialization returned null, aborting current connection attempt.
+[2026-03-14 23:52:53.534][INF] [Record] 连接失败
+正在尝试关闭并重启 ADB 进程
+[2026-03-14 23:52:53.558][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia-v2.10.9-win-x64\resource\announcement
+[2026-03-14 23:52:53.634][INF] 正在载入资源
+[2026-03-14 23:52:53.634][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia-v2.10.9-win-x64\resource
+[2026-03-14 23:52:53.634][INF] MFA异步任务 资源检测 开始.
+[2026-03-14 23:52:53.658][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-14 23:52:53.659][INF] Use GPU: succeed
+[2026-03-14 23:52:53.659][INF] GPU acceleration: Auto
+[2026-03-14 23:52:53.659][INF] MFA异步任务 控制器检测 开始.
+[2026-03-14 23:52:53.659][INF] Loading MAA Controller Configuration...
+[2026-03-14 23:52:53.659][INF] 触控模式:Default,捕获模式:Default
+[2026-03-14 23:52:53.659][INF] Name: 
+[2026-03-14 23:52:53.659][INF] AdbPath: adb
+[2026-03-14 23:52:53.659][INF] AdbSerial: 
+[2026-03-14 23:52:53.659][INF] ScreenCap: Default
+[2026-03-14 23:52:53.659][INF] Input: Default
+[2026-03-14 23:52:53.659][INF] Config: {}
+[2026-03-14 23:52:53.661][WRN] 初始化控制器时发生错误！
+[2026-03-14 23:52:53.662][ERR] System.ArgumentException: The value cannot be an empty string. (Parameter 'info.AdbSerial')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at MaaFramework.Binding.MaaAdbController..ctor(AdbDeviceInfo info, LinkOption link, CheckStatusOption check)
+   at MaaFramework.Binding.MaaAdbController..ctor(String adbPath, String adbSerial, AdbScreencapMethods screencapMethods, AdbInputMethods inputMethods, String config, String agentPath, LinkOption link, CheckStatusOption check)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.InitializeController(MaaControllerTypes controllerType, Boolean logConfig)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass128_0.<InitializeMaaTasker>b__7()
+   at MFAAvalonia.Helper.TaskManager.<>c__DisplayClass4_0`1.<RunTaskAsync>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog, Boolean noMessage)
+[2026-03-14 23:52:53.662][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-14 23:52:53.662][WRN] Controller initialization returned null, aborting current connection attempt.
+[2026-03-14 23:52:53.663][ERR] System.Exception: Connection failed after all retries
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.HandleDeviceConnectionAsync(CancellationToken token, Boolean showMessage)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass192_0.<<InitializeConnectionTasksAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.ValueType.MFATask.Run(CancellationToken token)
+[2026-03-14 23:52:53.663][INF] Stop Status: FAILED
+[2026-03-14 23:52:53.667][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-14 23:52:53.668][INF] Stop Status: STOPPING
+[2026-03-14 23:52:53.668][INF] 连接失败
+[2026-03-14 23:52:53.668][INF] >>> 任务 Action 开始.
+[2026-03-14 23:52:53.668][INF] >>> 任务 Action 完成.
+[2026-03-14 23:52:53.669][INF] MFA异步任务 启动检测 开始.
+[2026-03-14 23:52:53.670][INF] 开始执行任务: 查询CDK
+[2026-03-14 23:52:53.671][INF] 任务完成: 查询CDK
+[2026-03-14 23:52:53.671][INF] 开始执行任务: 更新资源
+[2026-03-14 23:52:53.674][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-14 23:52:53.674][INF] 任务完成: 更新资源
+[2026-03-14 23:52:53.678][INF] 正在停止......
+[2026-03-14 23:52:54.081][INF] 已放弃本次任务

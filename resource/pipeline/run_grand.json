@@ -1,4 +1,26 @@
 {
+    "冠位戴冠战-等待空节点": {
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 10000
+    },
+    "如果需要关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close_botton.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 2000
+    },
     "冠位戴冠战-职介": {
         "recognition": {
             "type": "TemplateMatch",
@@ -70,6 +92,7 @@
     "冠位戴冠战-开始": {
         "next": [
             "冠位戴冠战列表",
+            "[JumpBack]如果需要关闭弹窗",
             "[JumpBack]右侧下滑-冠位戴冠战列表",
             "未找到戴冠战入口"
         ]
@@ -105,8 +128,8 @@
             "冠位戴冠战-等级副本",
             "[JumpBack]右侧下滑2",
             "[JumpBack]右侧上滑1",
-            "未找到戴冠战入口3",
-            "[JumpBack]右侧下滑3"
+            "[JumpBack]右侧下滑3",
+            "未找到戴冠战入口3"
         ]
     },
     "未找到戴冠战入口2": {
@@ -127,8 +150,8 @@
                 ],
                 "end": [
                     [
-                        929,
-                        150,
+                        925,
+                        100,
                         1,
                         1
                     ]
@@ -188,16 +211,17 @@
             "type": "Command",
             "param": {
                 "exec": "run_bbc\\run_bbc.exe",
-                "detach": true
+                "detach": false
             }
         },
-        "post_delay": 60000,
+        "post_delay": 10000,
         "focus": {
             "Node.Recognition.Starting": "打开BBC中，请尽量不要移动鼠标，并将bbc窗口置于主屏幕",
             "Node.Action.Succeeded": "等待任务完成，BBC正常运行后，可以自由操作。"
         },
         "next": [
-            "冠位戴冠战-完成"
+            "冠位戴冠战-完成",
+            "[JumpBack]冠位戴冠战-等待空节点"
         ]
     },
     "冠位戴冠战-完成": {
@@ -222,7 +246,7 @@
             "param": {
                 "begin": [
                     925,
-                    150,
+                    100,
                     1,
                     1
                 ],
@@ -252,7 +276,7 @@
                 "end": [
                     [
                         929,
-                        150,
+                        100,
                         1,
                         1
                     ]

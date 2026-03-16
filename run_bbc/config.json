@@ -94,5 +94,15 @@
         "check_wait": 5,
         "window_title": "BBchannel",
         "if_window_exists": "脚本停止"
+    },
+    {
+        "action": "close",
+        "_comment": "再次执行关闭",
+        "wait": 1,
+        "on_failure": "skip",
+        "check_retries": 3,
+        "check_wait": 5,
+        "window_title": "BBchannel",
+        "if_window_exists": "BBchannel"
     }
 ]

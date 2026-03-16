@@ -8,7 +8,10 @@
         },
         "post_delay": 10000,
         "next": [
-            "自动登录"
+            "自动登录",
+            "[JumpBack]是否要更新",
+            "[JumpBack]异常启动弹窗",
+            "[JumpBack]等待更新完成"
         ]
     },
     "直到达到主界面": {
@@ -22,6 +25,9 @@
         },
         "timeout": 40000,
         "post_delay": 5000,
+        "focus": {
+            "Node.Recognition.Starting": "检测是否登录成功"
+        },
         "next": [
             "确认抵达主界面流程"
         ]
@@ -40,6 +46,9 @@
             "param": {}
         },
         "post_delay": 5000,
+        "focus": {
+            "Node.Recognition.Failed": "尚未检测到登录成功"
+        },
         "next": [
             "自动登录2"
         ]
@@ -111,9 +120,10 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 10000,
+        "post_delay": 15000,
         "next": [
-            "直到达到主界面"
+            "直到达到主界面",
+            "[JumpBack]如果要关闭"
         ]
     },
     "关闭主界面弹窗": {
@@ -166,12 +176,48 @@
         ]
     },
     "确认抵达主界面流程": {
+        "post_delay": 2000,
+        "focus": {
+            "Node.Recognition.Starting": "二次检测"
+        },
         "next": [
             "[JumpBack]关闭主界面弹窗",
             "如果要SKIP",
-            "[JumpBack]如果要关闭",
             "如果有奖励",
             "最终确认抵达主界面"
         ]
+    },
+    "是否要更新": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "update_botton.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 5000
+    },
+    "等待更新完成": {
+        "post_delay": 5000,
+        "max_hit": 20
+    },
+    "异常启动弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "deny_botton.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        }
     }
 }

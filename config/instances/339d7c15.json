@@ -4,6 +4,7 @@
     "打开bbc<|||>运行BBC",
     "启动游戏<|||>启动FGO",
     "冠位戴冠战<|||>冠位戴冠战-开始",
+    "启动检测<|||>冠位戴冠战-BBC脚本运行",
     "带Custom的任务<|||>MyTask4",
     "参数任务<|||>MyTask3",
     "选项任务<|||>MyTask2",
@@ -19,17 +20,7 @@
     {
       "name": "打开bbc",
       "entry": "运行BBC",
-      "default_check": true,
-      "description": "### 形式例如：\"F:\\BBchannel\\启动.cmd\"，不用带双引号 \n### 填写完可以运行一下看看BBC有没有正常打开 \n### 建议把打开bbc放到第一步 \n### bbc需要在设置里勾选【启动时自动连接前次设备】，并且将正确的队伍放到第一位",
-      "option": [
-        {
-          "name": "bbc路径",
-          "index": 0,
-          "data": {
-            "路径": "F:\\BBchannel\\启动.cmd"
-          }
-        }
-      ]
+      "default_check": false
     },
     {
       "name": "启动游戏",
@@ -57,11 +48,16 @@
           "index": 1
         }
       ]
+    },
+    {
+      "name": "启动检测",
+      "entry": "冠位戴冠战-BBC脚本运行",
+      "default_check": false
     }
   ],
   "AdbDevice": {
     "InfoHandle": {
-      "value": 1675962660608
+      "value": 2640015187728
     },
     "Name": "MuMu安卓设备-MuMuPlayer12 v5",
     "AdbPath": "C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe",
@@ -71,8 +67,8 @@
     "Config": "{\"extras\":{\"mumu\":{\"enable\":true,\"index\":0,\"path\":\"C:/Program Files/Netease/MuMu Player 12\"}}}",
     "AgentPath": "./MaaAgentBinary"
   },
-  "InstanceName": "配置 2",
-  "BeforeTask": "None",
+  "InstanceName": "默认配置",
+  "BeforeTask": "StartupScriptOnly",
   "SoftwarePath": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia-v2.10.9-win-x64\\MFAtest\\MFAAvalonia.exe",
   "WaitSoftwareTime": 10.0,
   "CurrentController": "Adb",
@@ -81,5 +77,21 @@
   "Win32ControlMouseType": "LegacyEvent",
   "Win32ControlKeyboardType": "PostMessageWithCursorPos",
   "Win32ControlScreenCapType": "PrintWindow",
-  "ResourceOptionItems": {}
+  "ResourceOptionItems": {},
+  "GlobalOptionItems": [
+    {
+      "name": "bbc路径",
+      "index": null,
+      "data": {
+        "bbc路径": "F:\\BBchannel\\启动.cmd"
+      }
+    },
+    {
+      "name": "内置脚本路径（AUTO-MAS专用）",
+      "index": null,
+      "data": {
+        "内置脚本路径(AUTO-MAS专用)": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+      }
+    }
+  ]
 }
