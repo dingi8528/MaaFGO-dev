@@ -1162,3 +1162,2601 @@
 [2026-03-16 09:50:47.821][INF] >>> 任务 播放音频 完成.
 [2026-03-16 09:50:47.829][INF] 任务已全部完成！
 (用时 0h 8m 31s)
+[2026-03-16 10:01:21.016][INF] MFA Closed!
+[2026-03-16 17:53:52.778][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 17:53:52.797][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 17:53:52.816][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 17:53:52.818][INF] Args: {}
+[2026-03-16 17:53:52.818][INF] MFA version: v2.10.9
+[2026-03-16 17:53:52.818][INF] .NET version: .NET 10.0.3
+[2026-03-16 17:53:53.278][INF] Initializing LanguageManager...
+[2026-03-16 17:53:53.383][INF] Loading Configurations...
+[2026-03-16 17:53:53.405][INF] Current Configuration: Default
+[2026-03-16 17:53:53.466][INF] System sleep allowed.
+[2026-03-16 17:53:53.468][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 17:53:53.468][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 17:53:53.473][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 17:53:53.473][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 17:53:53.525][ERR] Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: :. Path 'task[1]', line 68, position 25.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader, JsonLoadSettings options)
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor..ctor(String instanceId)
+[2026-03-16 17:53:53.529][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 17:53:53.535][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 17:53:53.554][ERR] 配置加载失败：interface.json
+Newtonsoft.Json.JsonSerializationException: Error converting value "description" to type 'MFAAvalonia.Extensions.MaaFW.MaaInterface+MaaInterfaceTask'. Path 'task[1]', line 68, position 25.
+ ---> System.ArgumentException: Could not cast or convert from System.String to MFAAvalonia.Extensions.MaaFW.MaaInterface+MaaInterfaceTask.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at MFAAvalonia.Helper.JsonHelper.TryDeserialize[T](String json, JsonConverter[] converters)
+   at MFAAvalonia.Helper.JsonHelper.LoadJson[T](String filePath, T defaultValue, Action errorHandle, JsonConverter[] converters)
+[2026-03-16 17:53:53.566][ERR] Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: :. Path 'task[1]', line 68, position 25.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader, JsonLoadSettings options)
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.ReadInterface()
+[2026-03-16 17:53:53.610][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 17:53:53.656][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 17:53:53.661][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 17:53:53.672][ERR] 配置加载失败：interface.json
+Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: :. Path 'task[1]', line 68, position 25.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonWriter.WriteToken(JsonReader reader, Boolean writeChildren, Boolean writeDateConstructorAsDate, Boolean writeComments)
+   at Newtonsoft.Json.Linq.JTokenWriter.WriteToken(JsonReader reader, Boolean writeChildren, Boolean writeDateConstructorAsDate, Boolean writeComments)
+   at Newtonsoft.Json.JsonWriter.WriteToken(JsonReader reader, Boolean writeChildren)
+   at Newtonsoft.Json.JsonWriter.WriteToken(JsonReader reader)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateJToken(JsonReader reader, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at MFAAvalonia.Helper.JsonHelper.TryDeserialize[T](String json, JsonConverter[] converters)
+   at MFAAvalonia.Helper.JsonHelper.LoadJson[T](String filePath, T defaultValue, Action errorHandle, JsonConverter[] converters)
+[2026-03-16 17:53:53.855][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 17:53:53.890][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 17:53:54.000][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 17:53:54.002][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 17:53:54.306][INF] [懒加载] 所有实例加载完成
+[2026-03-16 17:53:54.307][INF] [懒加载] 所有实例加载完成
+[2026-03-16 17:53:54.348][INF] UI initialization started
+[2026-03-16 17:53:54.574][INF] [Record] 文件 interface.json 加载失败！
+[2026-03-16 17:53:54.727][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 17:53:55.031][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 17:53:55.032][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 17:53:55.244][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 17:53:55.276][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 17:53:55.277][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 17:53:55.278][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 17:53:55.279][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 17:53:55.281][INF] 正在连接至模拟器......
+[2026-03-16 17:53:55.282][INF] 正在载入资源
+[2026-03-16 17:53:55.282][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\base
+[2026-03-16 17:53:55.282][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 17:53:55.353][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 17:53:55.354][INF] Use GPU: succeed
+[2026-03-16 17:53:55.354][INF] GPU acceleration: Auto
+[2026-03-16 17:53:55.354][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 17:53:55.354][INF] Loading MAA Controller Configuration...
+[2026-03-16 17:53:55.355][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 17:53:55.355][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 17:53:55.355][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 17:53:55.355][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 17:53:55.355][INF] ScreenCap: EmulatorExtras
+[2026-03-16 17:53:55.355][INF] Input: All
+[2026-03-16 17:53:55.355][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 17:53:55.560][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 17:53:55.766][INF] Registered built-in special task actions
+[2026-03-16 17:53:55.766][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\base\custom
+[2026-03-16 17:53:55.766][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 17:53:55.767][INF] Maafw debug mode: False
+[2026-03-16 17:53:56.031][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 17:53:56.108][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 17:53:56.126][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 17:53:56.126][INF] 截图耗时: 8ms(EmulatorExtras)
+[2026-03-16 17:53:56.130][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 17:53:56.130][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 17:53:56.134][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 17:53:56.134][INF] 开始执行任务: 查询CDK
+[2026-03-16 17:53:56.135][INF] Stop Status: SUCCEEDED
+[2026-03-16 17:53:56.136][INF] 任务完成: 查询CDK
+[2026-03-16 17:53:56.136][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 17:53:56.136][INF] 开始执行任务: 更新资源
+[2026-03-16 17:53:56.136][INF] 任务完成: 更新资源
+[2026-03-16 17:53:56.137][INF] >>> 任务 播放音频 开始.
+[2026-03-16 17:53:56.235][INF] >>> 任务 播放音频 完成.
+[2026-03-16 17:53:56.240][INF] 任务已全部完成！
+(用时 0h 0m 0s)
+[2026-03-16 17:54:31.523][INF] MFA Closed!
+[2026-03-16 17:54:36.104][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 17:54:36.121][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 17:54:36.140][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 17:54:36.141][INF] Args: {}
+[2026-03-16 17:54:36.141][INF] MFA version: v2.10.9
+[2026-03-16 17:54:36.141][INF] .NET version: .NET 10.0.3
+[2026-03-16 17:54:36.578][INF] Initializing LanguageManager...
+[2026-03-16 17:54:36.680][INF] Loading Configurations...
+[2026-03-16 17:54:36.702][INF] Current Configuration: Default
+[2026-03-16 17:54:36.774][INF] System sleep allowed.
+[2026-03-16 17:54:36.776][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 17:54:36.776][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 17:54:36.781][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 17:54:36.781][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 17:54:36.829][ERR] Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: :. Path 'task[1]', line 68, position 25.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader, JsonLoadSettings options)
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor..ctor(String instanceId)
+[2026-03-16 17:54:36.833][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 17:54:36.838][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 17:54:36.856][ERR] 配置加载失败：interface.json
+Newtonsoft.Json.JsonSerializationException: Error converting value "description" to type 'MFAAvalonia.Extensions.MaaFW.MaaInterface+MaaInterfaceTask'. Path 'task[1]', line 68, position 25.
+ ---> System.ArgumentException: Could not cast or convert from System.String to MFAAvalonia.Extensions.MaaFW.MaaInterface+MaaInterfaceTask.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at MFAAvalonia.Helper.JsonHelper.TryDeserialize[T](String json, JsonConverter[] converters)
+   at MFAAvalonia.Helper.JsonHelper.LoadJson[T](String filePath, T defaultValue, Action errorHandle, JsonConverter[] converters)
+[2026-03-16 17:54:36.868][ERR] Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: :. Path 'task[1]', line 68, position 25.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Linq.JContainer.ReadContentFrom(JsonReader r, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JContainer.ReadTokenFrom(JsonReader reader, JsonLoadSettings options)
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.ReadInterface()
+[2026-03-16 17:54:36.908][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 17:54:36.954][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 17:54:36.960][INF] 窗口位置已加载: X=-1960, Y=135
+[2026-03-16 17:54:36.971][ERR] 配置加载失败：interface.json
+Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: :. Path 'task[1]', line 68, position 25.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonWriter.WriteToken(JsonReader reader, Boolean writeChildren, Boolean writeDateConstructorAsDate, Boolean writeComments)
+   at Newtonsoft.Json.Linq.JTokenWriter.WriteToken(JsonReader reader, Boolean writeChildren, Boolean writeDateConstructorAsDate, Boolean writeComments)
+   at Newtonsoft.Json.JsonWriter.WriteToken(JsonReader reader, Boolean writeChildren)
+   at Newtonsoft.Json.JsonWriter.WriteToken(JsonReader reader)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateJToken(JsonReader reader, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at MFAAvalonia.Helper.JsonHelper.TryDeserialize[T](String json, JsonConverter[] converters)
+   at MFAAvalonia.Helper.JsonHelper.LoadJson[T](String filePath, T defaultValue, Action errorHandle, JsonConverter[] converters)
+[2026-03-16 17:54:37.145][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 17:54:37.180][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 17:54:37.289][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 17:54:37.291][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 17:54:37.578][INF] [懒加载] 所有实例加载完成
+[2026-03-16 17:54:37.579][INF] [懒加载] 所有实例加载完成
+[2026-03-16 17:54:37.621][INF] UI initialization started
+[2026-03-16 17:54:37.846][INF] [Record] 文件 interface.json 加载失败！
+[2026-03-16 17:54:37.998][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 17:54:38.302][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 17:54:38.303][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 17:54:38.420][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 17:54:38.463][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 17:54:38.464][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 17:54:38.465][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 17:54:38.466][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 17:54:38.468][INF] 正在连接至模拟器......
+[2026-03-16 17:54:38.469][INF] 正在载入资源
+[2026-03-16 17:54:38.469][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\base
+[2026-03-16 17:54:38.470][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 17:54:38.538][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 17:54:38.539][INF] Use GPU: succeed
+[2026-03-16 17:54:38.539][INF] GPU acceleration: Auto
+[2026-03-16 17:54:38.539][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 17:54:38.539][INF] Loading MAA Controller Configuration...
+[2026-03-16 17:54:38.540][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 17:54:38.540][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 17:54:38.540][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 17:54:38.540][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 17:54:38.540][INF] ScreenCap: EmulatorExtras
+[2026-03-16 17:54:38.540][INF] Input: All
+[2026-03-16 17:54:38.540][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 17:54:38.684][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 17:54:38.884][INF] Registered built-in special task actions
+[2026-03-16 17:54:38.884][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\base\custom
+[2026-03-16 17:54:38.884][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 17:54:38.885][INF] Maafw debug mode: False
+[2026-03-16 17:54:39.218][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 17:54:39.238][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 17:54:39.238][INF] 截图耗时: 9ms(EmulatorExtras)
+[2026-03-16 17:54:39.242][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 17:54:39.243][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 17:54:39.246][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 17:54:39.247][INF] 开始执行任务: 查询CDK
+[2026-03-16 17:54:39.247][INF] Stop Status: SUCCEEDED
+[2026-03-16 17:54:39.248][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 17:54:39.248][INF] 任务完成: 查询CDK
+[2026-03-16 17:54:39.248][INF] 开始执行任务: 更新资源
+[2026-03-16 17:54:39.249][INF] 任务完成: 更新资源
+[2026-03-16 17:54:39.249][INF] >>> 任务 播放音频 开始.
+[2026-03-16 17:54:39.302][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 17:54:39.345][INF] >>> 任务 播放音频 完成.
+[2026-03-16 17:54:39.357][INF] 任务已全部完成！
+(用时 0h 0m 0s)
+[2026-03-16 17:56:00.369][INF] MFA Closed!
+[2026-03-16 17:56:04.113][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 17:56:04.131][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 17:56:04.150][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 17:56:04.152][INF] Args: {}
+[2026-03-16 17:56:04.152][INF] MFA version: v2.10.9
+[2026-03-16 17:56:04.152][INF] .NET version: .NET 10.0.3
+[2026-03-16 17:56:04.596][INF] Initializing LanguageManager...
+[2026-03-16 17:56:04.699][INF] Loading Configurations...
+[2026-03-16 17:56:04.721][INF] Current Configuration: Default
+[2026-03-16 17:56:04.792][INF] System sleep allowed.
+[2026-03-16 17:56:04.794][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 17:56:04.794][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 17:56:04.798][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 17:56:04.798][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 17:56:04.847][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 17:56:04.853][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 17:56:04.902][INF] Resource version: 1.0.0
+[2026-03-16 17:56:04.903][INF] MaaFramework version: v5.8.1
+[2026-03-16 17:56:04.926][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 17:56:04.973][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 17:56:04.979][INF] 窗口位置已加载: X=-1960, Y=135
+[2026-03-16 17:56:05.173][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 17:56:05.207][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 17:56:05.319][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 17:56:05.321][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 17:56:05.601][INF] [懒加载] 所有实例加载完成
+[2026-03-16 17:56:05.602][INF] [懒加载] 所有实例加载完成
+[2026-03-16 17:56:05.645][INF] UI initialization started
+[2026-03-16 17:56:06.032][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 17:56:06.337][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 17:56:06.338][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 17:56:06.563][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 17:56:06.701][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 17:56:06.703][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 17:56:06.703][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 17:56:06.704][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 17:56:06.707][INF] 正在载入资源
+[2026-03-16 17:56:06.707][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 17:56:06.707][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 17:56:06.708][INF] 正在连接至模拟器......
+[2026-03-16 17:56:06.782][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 17:56:06.783][INF] Use GPU: succeed
+[2026-03-16 17:56:06.783][INF] GPU acceleration: Auto
+[2026-03-16 17:56:06.783][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 17:56:06.783][INF] Loading MAA Controller Configuration...
+[2026-03-16 17:56:06.784][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 17:56:06.784][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 17:56:06.784][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 17:56:06.784][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 17:56:06.784][INF] ScreenCap: EmulatorExtras
+[2026-03-16 17:56:06.784][INF] Input: All
+[2026-03-16 17:56:06.784][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 17:56:06.919][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 17:56:07.121][INF] Registered built-in special task actions
+[2026-03-16 17:56:07.121][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 17:56:07.121][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 17:56:07.122][INF] Maafw debug mode: False
+[2026-03-16 17:56:07.337][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 17:56:07.460][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 17:56:07.479][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 17:56:07.480][INF] 截图耗时: 9ms(EmulatorExtras)
+[2026-03-16 17:56:07.483][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 17:56:07.483][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 17:56:07.487][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 17:56:07.487][INF] 开始执行任务: 查询CDK
+[2026-03-16 17:56:07.488][INF] Stop Status: SUCCEEDED
+[2026-03-16 17:56:07.488][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 17:56:07.489][INF] 任务完成: 查询CDK
+[2026-03-16 17:56:07.489][INF] 开始执行任务: 更新资源
+[2026-03-16 17:56:07.490][INF] >>> 任务 播放音频 开始.
+[2026-03-16 17:56:07.533][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 17:56:07.533][INF] 任务完成: 更新资源
+[2026-03-16 17:56:07.585][INF] >>> 任务 播放音频 完成.
+[2026-03-16 17:56:07.597][INF] 任务已全部完成！
+(用时 0h 0m 0s)
+[2026-03-16 17:56:11.865][INF] [TaskPipelineMerge] Task#1 Name=[打开bbc] Entry=[运行BBC] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  }
+]
+[2026-03-16 17:56:11.865][INF] [TaskPipelineMerge] Task#2 Name=[启动游戏] Entry=[启动FGO] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "启动FGO": {
+      "action": {
+        "type": "StartApp",
+        "param": {
+          "package": "com.aniplex.fategrandorder"
+        }
+      }
+    }
+  }
+]
+[2026-03-16 17:56:11.865][INF] [TaskPipelineMerge] Task#3 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_saber.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 17:56:11.873][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 17:56:11.873][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 17:56:11.873][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 17:56:11.873][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 17:56:11.874][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 17:56:11.906][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 17:56:11.907][INF] 截图耗时: 16ms(EmulatorExtras)
+[2026-03-16 17:56:11.910][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 17:56:11.911][INF] 开始任务: 打开bbc
+[2026-03-16 17:56:12.666][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 17:56:12.667][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 17:56:12.668][INF] 开始任务: 启动游戏
+[2026-03-16 17:56:23.778][INF] 尚未检测到登录成功
+[2026-03-16 17:56:29.675][INF] 尚未检测到登录成功
+[2026-03-16 17:56:56.270][INF] 检测是否登录成功
+[2026-03-16 17:56:57.287][INF] 检测是否登录成功
+[2026-03-16 17:56:58.271][INF] 检测是否登录成功
+[2026-03-16 17:56:59.273][INF] 检测是否登录成功
+[2026-03-16 17:57:00.272][INF] 检测是否登录成功
+[2026-03-16 17:57:01.275][INF] 检测是否登录成功
+[2026-03-16 17:57:02.276][INF] 检测是否登录成功
+[2026-03-16 17:57:03.276][INF] 检测是否登录成功
+[2026-03-16 17:57:04.914][INF] [内存管理]释放了8.26 MB (17.4%)
+[2026-03-16 17:57:08.747][INF] 二次检测
+[2026-03-16 17:57:11.812][INF] 成功抵达主界面
+[2026-03-16 17:57:12.217][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 17:57:12.218][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 17:57:12.219][INF] 开始任务: 冠位戴冠战
+[2026-03-16 17:58:00.524][INF] Stop Status: NOT_STARTED
+[2026-03-16 17:58:00.525][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 17:58:00.525][INF] Stopping tasker attempt 1
+[2026-03-16 17:58:00.525][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 17:58:00.525][INF] Stop Status: STOPPING
+[2026-03-16 17:58:00.527][INF] 正在停止......
+[2026-03-16 17:58:01.252][INF] Stopping tasker attempt 1 returned Succeeded, retrying...
+[2026-03-16 17:58:01.252][INF] >>> 任务 Action 开始.
+[2026-03-16 17:58:01.252][INF] >>> 任务 Action 完成.
+[2026-03-16 17:58:01.655][INF] 已放弃本次任务
+[2026-03-16 17:58:21.866][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 17:58:21.873][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 17:58:21.874][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 17:58:21.874][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 17:58:21.874][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 17:58:21.874][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 17:58:21.890][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 17:58:21.891][INF] 截图耗时: 7ms(EmulatorExtras)
+[2026-03-16 17:58:21.891][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 17:58:21.892][INF] 开始任务: 冠位戴冠战
+[2026-03-16 17:58:35.823][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 17:58:35.825][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 17:58:35.825][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 17:58:35.825][INF] Stop Status: SUCCEEDED
+[2026-03-16 17:58:35.826][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 17:58:35.826][INF] >>> 任务 播放音频 开始.
+[2026-03-16 17:58:35.884][INF] >>> 任务 播放音频 完成.
+[2026-03-16 17:58:35.886][INF] 任务已全部完成！
+(用时 0h 0m 14s)
+[2026-03-16 18:09:35.005][INF] [内存管理]释放了8.51 MB (16.6%)
+[2026-03-16 18:14:35.030][INF] [内存管理]释放了8.21 MB (16.1%)
+[2026-03-16 18:19:35.054][INF] [内存管理]释放了8.47 MB (16.5%)
+[2026-03-16 18:20:20.986][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:20:20.996][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:20:20.996][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:20:20.996][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:20:20.996][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:20:20.997][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:20:21.021][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:20:21.021][INF] 截图耗时: 11ms(EmulatorExtras)
+[2026-03-16 18:20:21.022][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:20:21.023][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:20:33.524][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:20:33.931][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:20:33.932][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 18:20:33.932][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 18:20:33.932][INF] Stop Status: SUCCEEDED
+[2026-03-16 18:20:33.932][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:20:33.932][INF] >>> 任务 播放音频 开始.
+[2026-03-16 18:20:33.996][INF] >>> 任务 播放音频 完成.
+[2026-03-16 18:20:33.998][INF] 任务已全部完成！
+(用时 0h 0m 13s)
+[2026-03-16 18:20:38.958][INF] MFA Closed!
+[2026-03-16 18:21:11.819][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:21:11.838][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:21:11.859][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:21:11.860][INF] Args: {}
+[2026-03-16 18:21:11.860][INF] MFA version: v2.10.9
+[2026-03-16 18:21:11.860][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:21:12.332][INF] Initializing LanguageManager...
+[2026-03-16 18:21:12.441][INF] Loading Configurations...
+[2026-03-16 18:21:12.464][INF] Current Configuration: Default
+[2026-03-16 18:21:12.526][INF] System sleep allowed.
+[2026-03-16 18:21:12.528][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:21:12.529][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:21:12.533][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:21:12.533][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:21:12.582][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:21:12.589][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:21:12.641][INF] Resource version: 1.0.0
+[2026-03-16 18:21:12.641][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:21:12.669][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:21:12.719][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:21:12.725][INF] 窗口位置已加载: X=-1960, Y=135
+[2026-03-16 18:21:12.940][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:21:12.983][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:21:13.102][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:21:13.104][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:21:13.358][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:21:13.359][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:21:13.405][INF] UI initialization started
+[2026-03-16 18:21:13.815][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:21:14.120][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:21:14.121][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:21:14.242][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:21:14.285][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:21:14.394][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:21:14.396][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:21:14.397][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:21:14.398][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:21:14.402][INF] 正在载入资源
+[2026-03-16 18:21:14.402][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:21:14.402][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:21:14.402][INF] 正在连接至模拟器......
+[2026-03-16 18:21:14.482][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:21:14.483][INF] Use GPU: succeed
+[2026-03-16 18:21:14.483][INF] GPU acceleration: Auto
+[2026-03-16 18:21:14.483][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:21:14.484][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:21:14.485][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:21:14.485][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:21:14.485][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:21:14.485][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:21:14.485][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:21:14.485][INF] Input: All
+[2026-03-16 18:21:14.485][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:21:14.662][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:21:14.872][INF] Registered built-in special task actions
+[2026-03-16 18:21:14.873][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:21:14.873][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:21:14.873][INF] Maafw debug mode: False
+[2026-03-16 18:21:15.121][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:21:15.229][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:21:15.250][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:21:15.252][INF] 截图耗时: 9ms(EmulatorExtras)
+[2026-03-16 18:21:15.257][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:21:15.258][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:21:17.528][INF] Stop Status: NOT_STARTED
+[2026-03-16 18:21:17.530][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:21:17.531][INF] Stopping tasker attempt 1
+[2026-03-16 18:21:17.531][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:21:17.532][INF] Stop Status: STOPPING
+[2026-03-16 18:21:17.536][INF] 正在停止......
+[2026-03-16 18:21:17.613][INF] Stopping tasker attempt 1 returned Succeeded, retrying...
+[2026-03-16 18:21:17.614][INF] >>> 任务 Action 开始.
+[2026-03-16 18:21:17.614][INF] >>> 任务 Action 完成.
+[2026-03-16 18:21:17.614][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:21:17.615][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:21:17.616][INF] 任务完成: 查询CDK
+[2026-03-16 18:21:17.616][INF] 开始执行任务: 更新资源
+[2026-03-16 18:21:17.623][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:21:17.623][INF] 任务完成: 更新资源
+[2026-03-16 18:21:18.022][INF] 已放弃本次任务
+[2026-03-16 18:21:19.212][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:21:19.230][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:21:19.230][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:21:19.230][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:21:19.230][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:21:19.230][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:21:19.248][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:21:19.249][INF] 截图耗时: 8ms(EmulatorExtras)
+[2026-03-16 18:21:19.251][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:21:19.252][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:21:51.868][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:21:52.274][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:21:52.276][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 18:21:52.276][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 18:21:52.276][INF] Stop Status: SUCCEEDED
+[2026-03-16 18:21:52.276][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:21:52.277][INF] >>> 任务 播放音频 开始.
+[2026-03-16 18:21:52.374][INF] >>> 任务 播放音频 完成.
+[2026-03-16 18:21:52.384][INF] 任务已全部完成！
+(用时 0h 0m 33s)
+[2026-03-16 18:22:12.607][INF] [内存管理]释放了12.60 MB (25.2%)
+[2026-03-16 18:29:33.710][INF] MFA Closed!
+[2026-03-16 18:29:36.812][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:29:36.832][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:29:36.854][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:29:36.856][INF] Args: {}
+[2026-03-16 18:29:36.856][INF] MFA version: v2.10.9
+[2026-03-16 18:29:36.856][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:29:37.366][INF] Initializing LanguageManager...
+[2026-03-16 18:29:37.475][INF] Loading Configurations...
+[2026-03-16 18:29:37.498][INF] Current Configuration: Default
+[2026-03-16 18:29:37.571][INF] System sleep allowed.
+[2026-03-16 18:29:37.573][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:29:37.573][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:29:37.578][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:29:37.578][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:29:37.628][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:29:37.634][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:29:37.686][INF] Resource version: 1.0.0
+[2026-03-16 18:29:37.686][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:29:37.714][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:29:37.768][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:29:37.773][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 18:29:37.995][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:29:38.039][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:29:38.162][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:29:38.164][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:29:38.446][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:29:38.447][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:29:38.491][INF] UI initialization started
+[2026-03-16 18:29:38.908][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:29:39.212][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:29:39.213][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:29:39.434][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:29:39.475][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:29:39.592][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:29:39.595][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:29:39.596][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:29:39.596][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:29:39.600][INF] 正在连接至模拟器......
+[2026-03-16 18:29:39.600][INF] 正在载入资源
+[2026-03-16 18:29:39.600][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:29:39.600][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:29:39.679][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:29:39.680][INF] Use GPU: succeed
+[2026-03-16 18:29:39.680][INF] GPU acceleration: Auto
+[2026-03-16 18:29:39.680][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:29:39.681][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:29:39.682][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:29:39.682][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:29:39.682][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:29:39.682][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:29:39.682][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:29:39.682][INF] Input: All
+[2026-03-16 18:29:39.682][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:29:39.833][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:29:40.039][INF] Registered built-in special task actions
+[2026-03-16 18:29:40.040][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:29:40.040][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:29:40.040][INF] Maafw debug mode: False
+[2026-03-16 18:29:40.213][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:29:40.395][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:29:40.418][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:29:40.419][INF] 截图耗时: 11ms(EmulatorExtras)
+[2026-03-16 18:29:40.423][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:29:40.424][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:30:13.109][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:30:34.099][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:30:55.096][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:31:16.106][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:31:21.068][INF] Stop Status: NOT_STARTED
+[2026-03-16 18:31:21.070][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:31:21.070][INF] Stopping tasker attempt 1
+[2026-03-16 18:31:21.071][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:31:21.071][INF] Stop Status: STOPPING
+[2026-03-16 18:31:21.074][INF] 正在停止......
+[2026-03-16 18:31:21.519][INF] Stopping tasker attempt 1 returned Succeeded, retrying...
+[2026-03-16 18:31:21.519][INF] >>> 任务 Action 开始.
+[2026-03-16 18:31:21.519][INF] >>> 任务 Action 完成.
+[2026-03-16 18:31:21.520][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:31:21.520][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:31:21.521][INF] 任务完成: 查询CDK
+[2026-03-16 18:31:21.521][INF] 开始执行任务: 更新资源
+[2026-03-16 18:31:21.530][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:31:21.530][INF] 任务完成: 更新资源
+[2026-03-16 18:31:21.923][INF] 已放弃本次任务
+[2026-03-16 18:35:59.300][INF] MFA Closed!
+[2026-03-16 18:36:16.723][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:36:16.742][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:36:16.762][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:36:16.764][INF] Args: {}
+[2026-03-16 18:36:16.764][INF] MFA version: v2.10.9
+[2026-03-16 18:36:16.764][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:36:17.252][INF] Initializing LanguageManager...
+[2026-03-16 18:36:17.360][INF] Loading Configurations...
+[2026-03-16 18:36:17.383][INF] Current Configuration: Default
+[2026-03-16 18:36:17.446][INF] System sleep allowed.
+[2026-03-16 18:36:17.448][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:36:17.448][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:36:17.452][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:36:17.453][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:36:17.502][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:36:17.508][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:36:17.559][INF] Resource version: 1.0.0
+[2026-03-16 18:36:17.559][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:36:17.586][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:36:17.637][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:36:17.642][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 18:36:17.847][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:36:17.885][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:36:18.001][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:36:18.003][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:36:18.332][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:36:18.333][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:36:18.378][INF] UI initialization started
+[2026-03-16 18:36:18.785][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:36:19.089][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:36:19.089][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:36:19.196][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:36:19.235][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:36:19.335][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:36:19.339][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:36:19.339][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:36:19.340][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:36:19.343][INF] 正在连接至模拟器......
+[2026-03-16 18:36:19.343][INF] 正在载入资源
+[2026-03-16 18:36:19.343][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:36:19.343][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:36:19.418][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:36:19.419][INF] Use GPU: succeed
+[2026-03-16 18:36:19.419][INF] GPU acceleration: Auto
+[2026-03-16 18:36:19.419][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:36:19.420][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:36:19.420][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:36:19.421][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:36:19.421][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:36:19.421][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:36:19.421][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:36:19.421][INF] Input: All
+[2026-03-16 18:36:19.421][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:36:19.567][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:36:19.792][INF] Registered built-in special task actions
+[2026-03-16 18:36:19.792][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:36:19.792][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:36:19.793][INF] Maafw debug mode: False
+[2026-03-16 18:36:20.089][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:36:20.161][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:36:20.186][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:36:20.186][INF] 截图耗时: 11ms(EmulatorExtras)
+[2026-03-16 18:36:20.190][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:36:20.191][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:36:53.039][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:36:54.033][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:36:55.033][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:36:56.039][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:36:57.034][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:36:58.039][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:36:59.041][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:00.042][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:01.043][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:02.045][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:03.044][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:04.041][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:05.052][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:06.045][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:07.049][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:08.046][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:09.053][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:37:09.082][INF] Stop Status: NOT_STARTED
+[2026-03-16 18:37:09.083][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:37:09.084][INF] Stopping tasker attempt 1
+[2026-03-16 18:37:09.084][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:37:09.085][INF] Stop Status: STOPPING
+[2026-03-16 18:37:09.087][INF] 正在停止......
+[2026-03-16 18:37:09.817][INF] Stopping tasker attempt 1 returned Succeeded, retrying...
+[2026-03-16 18:37:09.818][INF] >>> 任务 Action 开始.
+[2026-03-16 18:37:09.818][INF] >>> 任务 Action 完成.
+[2026-03-16 18:37:09.818][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:37:09.819][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:37:09.820][INF] 任务完成: 查询CDK
+[2026-03-16 18:37:09.820][INF] 开始执行任务: 更新资源
+[2026-03-16 18:37:09.828][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:37:09.828][INF] 任务完成: 更新资源
+[2026-03-16 18:37:10.221][INF] 已放弃本次任务
+[2026-03-16 18:37:34.452][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:37:34.474][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:37:34.494][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:37:34.496][INF] Args: {}
+[2026-03-16 18:37:34.496][INF] MFA version: v2.10.9
+[2026-03-16 18:37:34.496][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:37:35.003][INF] Initializing LanguageManager...
+[2026-03-16 18:37:35.117][INF] Loading Configurations...
+[2026-03-16 18:37:35.140][INF] Current Configuration: Default
+[2026-03-16 18:37:35.204][INF] System sleep allowed.
+[2026-03-16 18:37:35.206][INF] HotkeyPrimaryElection: 无法成为主进程，已有其他实例持有互斥锁
+[2026-03-16 18:37:35.206][INF] GlobalHotkeyService: 作为子进程初始化
+[2026-03-16 18:37:35.207][INF] GlobalHotkeyService: 开始连接主进程...
+[2026-03-16 18:37:35.207][INF] GlobalHotkeyService: 连接尝试 1/10...
+[2026-03-16 18:37:35.208][INF] HotkeyIpcClient: 端口文件读取结果 = 52718
+[2026-03-16 18:37:35.208][INF] HotkeyIpcClient: 尝试连接文件中的端口 52718
+[2026-03-16 18:37:35.209][INF] HotkeyIpcClient: 尝试连接端口 52718...
+[2026-03-16 18:37:35.221][INF] HotkeyIpcClient: TCP 连接成功，端口 52718
+[2026-03-16 18:37:35.223][INF] HotkeyIpcClient: 发送连接请求
+[2026-03-16 18:37:35.252][INF] HotkeyIpcClient: 等待连接确认...
+[2026-03-16 18:37:35.257][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:37:35.263][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:37:35.271][INF] HotkeyIpcServer: 客户端连接 - 7232_dc7b292c6955425d8259969e66080504
+[2026-03-16 18:37:35.271][INF] HotkeyIpcClient: 收到响应 - {"type":7,"senderId":17000,"timestamp":1773657455269,"sequenceNumber":1}
+[2026-03-16 18:37:35.274][INF] HotkeyIpcClient: 已连接到主进程，端口=52718, ClientId=7232_dc7b292c6955425d8259969e66080504
+[2026-03-16 18:37:35.274][INF] HotkeyIpcClient: 文件端口 52718 连接结果 = True
+[2026-03-16 18:37:35.275][INF] GlobalHotkeyService: 成功连接到主进程，注册 0 个热键
+[2026-03-16 18:37:35.308][INF] Resource version: 1.0.0
+[2026-03-16 18:37:35.308][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:37:35.337][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:37:35.393][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:37:35.398][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 18:37:35.613][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:37:35.654][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:37:35.706][INF] MFA Closed!
+[2026-03-16 18:37:35.716][INF] HotkeyIpcClient: 接收循环结束，触发断开事件
+[2026-03-16 18:37:36.039][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:37:36.085][INF] UI initialization started
+[2026-03-16 18:37:37.722][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:37:37.723][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:37:37.724][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:37:37.724][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:37:39.275][INF] MFA Closed!
+[2026-03-16 18:37:40.373][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:37:40.392][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:37:40.412][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:37:40.414][INF] Args: {}
+[2026-03-16 18:37:40.414][INF] MFA version: v2.10.9
+[2026-03-16 18:37:40.414][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:37:40.892][INF] Initializing LanguageManager...
+[2026-03-16 18:37:41.000][INF] Loading Configurations...
+[2026-03-16 18:37:41.022][INF] Current Configuration: Default
+[2026-03-16 18:37:41.085][INF] System sleep allowed.
+[2026-03-16 18:37:41.087][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:37:41.087][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:37:41.092][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:37:41.092][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:37:41.141][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:37:41.147][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:37:41.199][INF] Resource version: 1.0.0
+[2026-03-16 18:37:41.199][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:37:41.226][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:37:41.276][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:37:41.281][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 18:37:41.490][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:37:41.529][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:37:41.648][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:37:41.650][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:37:41.959][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:37:41.959][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:37:42.002][INF] UI initialization started
+[2026-03-16 18:37:42.410][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:37:42.714][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:37:42.715][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:37:42.925][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:37:42.968][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:37:43.077][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:37:43.079][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:37:43.080][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:37:43.080][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:37:43.085][INF] 正在连接至模拟器......
+[2026-03-16 18:37:43.085][INF] 正在载入资源
+[2026-03-16 18:37:43.086][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:37:43.086][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:37:43.170][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:37:43.171][INF] Use GPU: succeed
+[2026-03-16 18:37:43.171][INF] GPU acceleration: Auto
+[2026-03-16 18:37:43.171][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:37:43.172][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:37:43.172][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:37:43.173][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:37:43.173][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:37:43.173][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:37:43.173][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:37:43.173][INF] Input: All
+[2026-03-16 18:37:43.173][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:37:43.332][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:37:43.539][INF] Registered built-in special task actions
+[2026-03-16 18:37:43.540][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:37:43.540][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:37:43.540][INF] Maafw debug mode: False
+[2026-03-16 18:37:43.715][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:37:43.884][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:37:43.906][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:37:43.907][INF] 截图耗时: 10ms(EmulatorExtras)
+[2026-03-16 18:37:43.911][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:37:43.911][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:38:16.765][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:17.761][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:18.758][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:19.757][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:20.769][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:21.765][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:22.766][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:23.765][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:24.769][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:25.764][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:26.770][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:27.774][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:28.776][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:29.776][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:30.773][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:31.774][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:32.771][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:33.779][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:34.790][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:35.777][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:36.795][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:38:36.821][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:38:36.822][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 18:38:36.823][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 18:38:36.828][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:38:36.829][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:38:36.830][INF] Stop Status: SUCCEEDED
+[2026-03-16 18:38:36.830][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:38:36.831][INF] 任务完成: 查询CDK
+[2026-03-16 18:38:36.831][INF] 开始执行任务: 更新资源
+[2026-03-16 18:38:36.832][INF] >>> 任务 播放音频 开始.
+[2026-03-16 18:38:36.879][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:38:36.879][INF] 任务完成: 更新资源
+[2026-03-16 18:38:36.931][INF] >>> 任务 播放音频 完成.
+[2026-03-16 18:38:36.933][INF] 任务已全部完成！
+(用时 0h 0m 53s)
+[2026-03-16 18:42:51.850][INF] MFA Closed!
+[2026-03-16 18:42:53.860][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:42:53.879][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:42:53.899][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:42:53.901][INF] Args: {}
+[2026-03-16 18:42:53.901][INF] MFA version: v2.10.9
+[2026-03-16 18:42:53.901][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:42:54.372][INF] Initializing LanguageManager...
+[2026-03-16 18:42:54.477][INF] Loading Configurations...
+[2026-03-16 18:42:54.500][INF] Current Configuration: Default
+[2026-03-16 18:42:54.562][INF] System sleep allowed.
+[2026-03-16 18:42:54.564][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:42:54.564][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:42:54.568][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:42:54.568][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:42:54.618][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:42:54.624][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:42:54.674][INF] Resource version: 1.0.0
+[2026-03-16 18:42:54.674][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:42:54.701][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:42:54.754][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:42:54.759][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 18:42:54.965][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:42:55.004][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:42:55.118][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:42:55.121][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:42:55.433][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:42:55.433][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:42:55.477][INF] UI initialization started
+[2026-03-16 18:42:55.879][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:42:56.183][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:42:56.183][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:42:56.288][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:42:56.327][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:42:56.422][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:42:56.423][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:42:56.424][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:42:56.425][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:42:56.428][INF] 正在连接至模拟器......
+[2026-03-16 18:42:56.428][INF] 正在载入资源
+[2026-03-16 18:42:56.428][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:42:56.428][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:42:56.507][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:42:56.508][INF] Use GPU: succeed
+[2026-03-16 18:42:56.508][INF] GPU acceleration: Auto
+[2026-03-16 18:42:56.508][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:42:56.508][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:42:56.509][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:42:56.509][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:42:56.509][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:42:56.509][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:42:56.509][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:42:56.509][INF] Input: All
+[2026-03-16 18:42:56.509][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:42:56.652][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:42:56.868][INF] Registered built-in special task actions
+[2026-03-16 18:42:56.868][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:42:56.868][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:42:56.869][INF] Maafw debug mode: False
+[2026-03-16 18:42:57.183][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:42:57.212][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:42:57.236][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:42:57.236][INF] 截图耗时: 11ms(EmulatorExtras)
+[2026-03-16 18:42:57.242][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:42:57.242][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:43:30.045][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:31.030][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:32.033][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:33.028][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:34.032][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:35.039][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:36.036][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:37.037][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:38.045][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:39.049][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:40.048][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:41.039][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:42.046][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:43.044][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:44.039][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:45.044][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:46.053][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:47.044][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:48.046][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:49.045][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:50.047][INF] 未找到戴冠战入口！脚本中止
+[2026-03-16 18:43:50.072][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:43:50.073][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 18:43:50.073][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 18:43:50.075][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:43:50.076][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:43:50.076][INF] Stop Status: SUCCEEDED
+[2026-03-16 18:43:50.077][INF] 任务完成: 查询CDK
+[2026-03-16 18:43:50.077][INF] 开始执行任务: 更新资源
+[2026-03-16 18:43:50.077][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:43:50.079][INF] >>> 任务 播放音频 开始.
+[2026-03-16 18:43:50.084][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:43:50.084][INF] 任务完成: 更新资源
+[2026-03-16 18:43:50.176][INF] >>> 任务 播放音频 完成.
+[2026-03-16 18:43:50.188][INF] 任务已全部完成！
+(用时 0h 0m 53s)
+[2026-03-16 18:47:30.079][INF] MFA Closed!
+[2026-03-16 18:47:31.932][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:47:31.952][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:47:31.973][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:47:31.974][INF] Args: {}
+[2026-03-16 18:47:31.974][INF] MFA version: v2.10.9
+[2026-03-16 18:47:31.974][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:47:32.457][INF] Initializing LanguageManager...
+[2026-03-16 18:47:32.563][INF] Loading Configurations...
+[2026-03-16 18:47:32.586][INF] Current Configuration: Default
+[2026-03-16 18:47:32.648][INF] System sleep allowed.
+[2026-03-16 18:47:32.650][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:47:32.650][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:47:32.655][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:47:32.655][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:47:32.703][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:47:32.709][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:47:32.760][INF] Resource version: 1.0.0
+[2026-03-16 18:47:32.760][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:47:32.788][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:47:32.838][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:47:32.843][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 18:47:33.049][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:47:33.085][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:47:33.203][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:47:33.205][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:47:33.510][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:47:33.511][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:47:33.556][INF] UI initialization started
+[2026-03-16 18:47:33.958][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:47:34.263][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:47:34.263][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:47:34.371][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:47:34.410][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:47:34.510][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:47:34.512][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:47:34.513][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:47:34.513][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:47:34.517][INF] 正在连接至模拟器......
+[2026-03-16 18:47:34.517][INF] 正在载入资源
+[2026-03-16 18:47:34.517][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:47:34.518][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:47:34.595][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:47:34.596][INF] Use GPU: succeed
+[2026-03-16 18:47:34.596][INF] GPU acceleration: Auto
+[2026-03-16 18:47:34.596][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:47:34.597][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:47:34.598][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:47:34.598][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:47:34.598][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:47:34.598][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:47:34.598][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:47:34.598][INF] Input: All
+[2026-03-16 18:47:34.598][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:47:34.766][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:47:34.979][INF] Registered built-in special task actions
+[2026-03-16 18:47:34.979][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:47:34.979][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:47:34.980][INF] Maafw debug mode: False
+[2026-03-16 18:47:35.262][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:47:35.328][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:47:35.348][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:47:35.348][INF] 截图耗时: 9ms(EmulatorExtras)
+[2026-03-16 18:47:35.355][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:47:35.356][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:48:08.186][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:09.184][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:10.187][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:11.190][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:12.192][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:13.191][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:14.191][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:15.197][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:16.196][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:17.204][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:18.208][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:19.200][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:20.198][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:21.198][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:22.195][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:23.199][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:24.203][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:25.206][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:26.221][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:27.215][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:28.211][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:48:28.237][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:48:28.238][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 18:48:28.238][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 18:48:28.241][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:48:28.241][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:48:28.242][INF] Stop Status: SUCCEEDED
+[2026-03-16 18:48:28.242][INF] 任务完成: 查询CDK
+[2026-03-16 18:48:28.242][INF] 开始执行任务: 更新资源
+[2026-03-16 18:48:28.243][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:48:28.245][INF] >>> 任务 播放音频 开始.
+[2026-03-16 18:48:28.249][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:48:28.249][INF] 任务完成: 更新资源
+[2026-03-16 18:48:28.341][INF] >>> 任务 播放音频 完成.
+[2026-03-16 18:48:28.349][INF] 任务已全部完成！
+(用时 0h 0m 53s)
+[2026-03-16 18:48:35.005][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:48:35.024][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:48:35.025][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:48:35.025][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:48:35.025][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:48:35.025][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:48:35.044][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:48:35.044][INF] 截图耗时: 8ms(EmulatorExtras)
+[2026-03-16 18:48:35.046][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:48:35.046][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:49:07.775][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:08.774][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:09.775][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:10.774][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:11.783][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:12.780][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:13.789][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:14.781][INF] [error]未找到戴冠战入口！脚本中止
+[2026-03-16 18:49:15.336][INF] Stop Status: NOT_STARTED
+[2026-03-16 18:49:15.336][INF] MFA Closed!
+[2026-03-16 18:49:17.680][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:49:17.699][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:49:17.718][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:49:17.720][INF] Args: {}
+[2026-03-16 18:49:17.720][INF] MFA version: v2.10.9
+[2026-03-16 18:49:17.720][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:49:18.177][INF] Initializing LanguageManager...
+[2026-03-16 18:49:18.281][INF] Loading Configurations...
+[2026-03-16 18:49:18.303][INF] Current Configuration: Default
+[2026-03-16 18:49:18.364][INF] System sleep allowed.
+[2026-03-16 18:49:18.366][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:49:18.367][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:49:18.371][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:49:18.371][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:49:18.422][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:49:18.427][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:49:18.478][INF] Resource version: 1.0.0
+[2026-03-16 18:49:18.478][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:49:18.505][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:49:18.555][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:49:18.562][INF] 窗口位置已加载: X=78, Y=78
+[2026-03-16 18:49:18.764][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:49:18.800][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:49:18.913][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:49:18.915][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:49:19.234][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:49:19.234][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:49:19.279][INF] UI initialization started
+[2026-03-16 18:49:19.674][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:49:19.979][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:49:19.980][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:49:20.083][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:49:20.125][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:49:20.230][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:49:20.231][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:49:20.232][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:49:20.233][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:49:20.236][INF] 正在载入资源
+[2026-03-16 18:49:20.236][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:49:20.236][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:49:20.236][INF] 正在连接至模拟器......
+[2026-03-16 18:49:20.313][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:49:20.314][INF] Use GPU: succeed
+[2026-03-16 18:49:20.314][INF] GPU acceleration: Auto
+[2026-03-16 18:49:20.314][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:49:20.315][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:49:20.316][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:49:20.316][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:49:20.316][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:49:20.316][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:49:20.316][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:49:20.316][INF] Input: All
+[2026-03-16 18:49:20.316][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:49:20.455][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:49:20.662][INF] Registered built-in special task actions
+[2026-03-16 18:49:20.662][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:49:20.662][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:49:20.663][INF] Maafw debug mode: False
+[2026-03-16 18:49:20.979][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:49:21.062][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:49:21.081][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:49:21.082][INF] 截图耗时: 9ms(EmulatorExtras)
+[2026-03-16 18:49:21.087][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:49:21.087][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:50:13.907][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:50:13.908][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 18:50:13.909][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 18:50:13.911][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:50:13.912][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:50:13.912][INF] Stop Status: SUCCEEDED
+[2026-03-16 18:50:13.913][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:50:13.913][INF] 任务完成: 查询CDK
+[2026-03-16 18:50:13.913][INF] 开始执行任务: 更新资源
+[2026-03-16 18:50:13.914][INF] >>> 任务 播放音频 开始.
+[2026-03-16 18:50:13.964][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:50:13.964][INF] 任务完成: 更新资源
+[2026-03-16 18:50:14.011][INF] >>> 任务 播放音频 完成.
+[2026-03-16 18:50:14.024][INF] 任务已全部完成！
+(用时 0h 0m 53s)
+[2026-03-16 18:55:07.052][INF] MFA Closed!
+[2026-03-16 18:55:09.676][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 18:55:09.695][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 18:55:09.715][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 18:55:09.717][INF] Args: {}
+[2026-03-16 18:55:09.717][INF] MFA version: v2.10.9
+[2026-03-16 18:55:09.717][INF] .NET version: .NET 10.0.3
+[2026-03-16 18:55:10.193][INF] Initializing LanguageManager...
+[2026-03-16 18:55:10.299][INF] Loading Configurations...
+[2026-03-16 18:55:10.321][INF] Current Configuration: Default
+[2026-03-16 18:55:10.383][INF] System sleep allowed.
+[2026-03-16 18:55:10.385][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 18:55:10.385][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 18:55:10.390][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 18:55:10.390][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 18:55:10.441][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 18:55:10.447][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:55:10.498][INF] Resource version: 1.0.0
+[2026-03-16 18:55:10.499][INF] MaaFramework version: v5.8.1
+[2026-03-16 18:55:10.526][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:55:10.579][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 18:55:10.585][INF] 窗口位置已加载: X=78, Y=78
+[2026-03-16 18:55:10.792][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 18:55:10.831][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 18:55:10.946][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 18:55:10.948][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 18:55:11.258][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:55:11.259][INF] [懒加载] 所有实例加载完成
+[2026-03-16 18:55:11.302][INF] UI initialization started
+[2026-03-16 18:55:11.707][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 18:55:12.011][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 18:55:12.012][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 18:55:12.117][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 18:55:12.155][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 18:55:12.250][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 18:55:12.251][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 18:55:12.252][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 18:55:12.253][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 18:55:12.256][INF] 正在连接至模拟器......
+[2026-03-16 18:55:12.256][INF] 正在载入资源
+[2026-03-16 18:55:12.256][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 18:55:12.256][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 18:55:12.332][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 18:55:12.333][INF] Use GPU: succeed
+[2026-03-16 18:55:12.333][INF] GPU acceleration: Auto
+[2026-03-16 18:55:12.333][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 18:55:12.334][INF] Loading MAA Controller Configuration...
+[2026-03-16 18:55:12.335][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 18:55:12.335][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 18:55:12.335][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 18:55:12.335][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 18:55:12.335][INF] ScreenCap: EmulatorExtras
+[2026-03-16 18:55:12.335][INF] Input: All
+[2026-03-16 18:55:12.335][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 18:55:12.506][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 18:55:12.721][INF] Registered built-in special task actions
+[2026-03-16 18:55:12.721][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 18:55:12.721][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 18:55:12.722][INF] Maafw debug mode: False
+[2026-03-16 18:55:13.011][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 18:55:13.064][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 18:55:13.086][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 18:55:13.086][INF] 截图耗时: 10ms(EmulatorExtras)
+[2026-03-16 18:55:13.091][INF] 开始任务: 冠位戴冠战
+[2026-03-16 18:55:13.091][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 18:56:05.913][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 18:56:05.914][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 18:56:05.914][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 18:56:05.917][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 18:56:05.918][INF] 开始执行任务: 查询CDK
+[2026-03-16 18:56:05.918][INF] Stop Status: SUCCEEDED
+[2026-03-16 18:56:05.918][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 18:56:05.919][INF] 任务完成: 查询CDK
+[2026-03-16 18:56:05.919][INF] 开始执行任务: 更新资源
+[2026-03-16 18:56:05.920][INF] >>> 任务 播放音频 开始.
+[2026-03-16 18:56:05.971][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 18:56:05.971][INF] 任务完成: 更新资源
+[2026-03-16 18:56:06.016][INF] >>> 任务 播放音频 完成.
+[2026-03-16 18:56:06.027][INF] 任务已全部完成！
+(用时 0h 0m 53s)
+[2026-03-16 19:03:17.441][INF] MFA Closed!
+[2026-03-16 19:03:19.987][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 19:03:20.006][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 19:03:20.026][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 19:03:20.028][INF] Args: {}
+[2026-03-16 19:03:20.028][INF] MFA version: v2.10.9
+[2026-03-16 19:03:20.028][INF] .NET version: .NET 10.0.3
+[2026-03-16 19:03:20.516][INF] Initializing LanguageManager...
+[2026-03-16 19:03:20.622][INF] Loading Configurations...
+[2026-03-16 19:03:20.644][INF] Current Configuration: Default
+[2026-03-16 19:03:20.706][INF] System sleep allowed.
+[2026-03-16 19:03:20.708][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 19:03:20.708][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 19:03:20.714][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 19:03:20.714][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 19:03:20.761][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 19:03:20.767][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:03:20.820][INF] Resource version: 1.0.0
+[2026-03-16 19:03:20.820][INF] MaaFramework version: v5.8.1
+[2026-03-16 19:03:20.848][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:03:20.899][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 19:03:20.904][INF] 窗口位置已加载: X=78, Y=78
+[2026-03-16 19:03:21.110][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 19:03:21.147][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 19:03:21.264][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:03:21.266][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:03:21.592][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:03:21.593][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:03:21.638][INF] UI initialization started
+[2026-03-16 19:03:22.041][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 19:03:22.344][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 19:03:22.345][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 19:03:22.556][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 19:03:22.599][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 19:03:22.708][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 19:03:22.709][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 19:03:22.710][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 19:03:22.711][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 19:03:22.714][INF] 正在连接至模拟器......
+[2026-03-16 19:03:22.715][INF] 正在载入资源
+[2026-03-16 19:03:22.715][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 19:03:22.715][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 19:03:22.795][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 19:03:22.796][INF] Use GPU: succeed
+[2026-03-16 19:03:22.796][INF] GPU acceleration: Auto
+[2026-03-16 19:03:22.796][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 19:03:22.797][INF] Loading MAA Controller Configuration...
+[2026-03-16 19:03:22.798][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 19:03:22.798][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 19:03:22.798][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 19:03:22.798][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 19:03:22.798][INF] ScreenCap: EmulatorExtras
+[2026-03-16 19:03:22.798][INF] Input: All
+[2026-03-16 19:03:22.798][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 19:03:22.952][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 19:03:23.158][INF] Registered built-in special task actions
+[2026-03-16 19:03:23.158][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 19:03:23.158][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 19:03:23.159][INF] Maafw debug mode: False
+[2026-03-16 19:03:23.345][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 19:03:23.517][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 19:03:23.537][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 19:03:23.538][INF] 截图耗时: 9ms(EmulatorExtras)
+[2026-03-16 19:03:23.543][INF] 开始任务: 冠位戴冠战
+[2026-03-16 19:03:23.543][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 19:04:16.383][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 19:04:16.384][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 19:04:16.384][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 19:04:16.387][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 19:04:16.388][INF] 开始执行任务: 查询CDK
+[2026-03-16 19:04:16.388][INF] Stop Status: SUCCEEDED
+[2026-03-16 19:04:16.388][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 19:04:16.389][INF] 任务完成: 查询CDK
+[2026-03-16 19:04:16.389][INF] 开始执行任务: 更新资源
+[2026-03-16 19:04:16.390][INF] >>> 任务 播放音频 开始.
+[2026-03-16 19:04:16.436][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 19:04:16.436][INF] 任务完成: 更新资源
+[2026-03-16 19:04:16.490][INF] >>> 任务 播放音频 完成.
+[2026-03-16 19:04:16.500][INF] 任务已全部完成！
+(用时 0h 0m 53s)
+[2026-03-16 19:05:00.616][INF] MFA Closed!
+[2026-03-16 19:05:20.576][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 19:05:20.595][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 19:05:20.615][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 19:05:20.616][INF] Args: {}
+[2026-03-16 19:05:20.617][INF] MFA version: v2.10.9
+[2026-03-16 19:05:20.617][INF] .NET version: .NET 10.0.3
+[2026-03-16 19:05:21.098][INF] Initializing LanguageManager...
+[2026-03-16 19:05:21.204][INF] Loading Configurations...
+[2026-03-16 19:05:21.227][INF] Current Configuration: Default
+[2026-03-16 19:05:21.289][INF] System sleep allowed.
+[2026-03-16 19:05:21.292][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 19:05:21.292][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 19:05:21.297][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 19:05:21.297][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 19:05:21.347][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 19:05:21.353][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:05:21.408][INF] Resource version: 1.0.0
+[2026-03-16 19:05:21.408][INF] MaaFramework version: v5.8.1
+[2026-03-16 19:05:21.436][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:05:21.492][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 19:05:21.499][INF] 窗口位置已加载: X=78, Y=78
+[2026-03-16 19:05:21.717][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 19:05:21.755][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 19:05:21.875][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:05:21.877][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:05:22.116][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:05:22.117][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:05:22.161][INF] UI initialization started
+[2026-03-16 19:05:22.578][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 19:05:22.882][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 19:05:22.883][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 19:05:22.988][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 19:05:23.032][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 19:05:23.142][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 19:05:23.144][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 19:05:23.144][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 19:05:23.145][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 19:05:23.149][INF] 正在载入资源
+[2026-03-16 19:05:23.149][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 19:05:23.149][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 19:05:23.149][INF] 正在连接至模拟器......
+[2026-03-16 19:05:23.240][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 19:05:23.241][INF] Use GPU: succeed
+[2026-03-16 19:05:23.241][INF] GPU acceleration: Auto
+[2026-03-16 19:05:23.241][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 19:05:23.242][INF] Loading MAA Controller Configuration...
+[2026-03-16 19:05:23.242][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 19:05:23.243][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 19:05:23.243][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 19:05:23.243][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 19:05:23.243][INF] ScreenCap: EmulatorExtras
+[2026-03-16 19:05:23.243][INF] Input: All
+[2026-03-16 19:05:23.243][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 19:05:23.388][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 19:05:23.595][INF] Registered built-in special task actions
+[2026-03-16 19:05:23.595][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 19:05:23.595][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 19:05:23.596][INF] Maafw debug mode: False
+[2026-03-16 19:05:23.882][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 19:05:23.954][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 19:05:23.974][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 19:05:23.974][INF] 截图耗时: 9ms(EmulatorExtras)
+[2026-03-16 19:05:23.978][INF] 开始任务: 冠位戴冠战
+[2026-03-16 19:05:23.979][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 19:06:17.382][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 19:06:17.383][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 19:06:17.384][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 19:06:17.386][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 19:06:17.387][INF] 开始执行任务: 查询CDK
+[2026-03-16 19:06:17.387][INF] Stop Status: SUCCEEDED
+[2026-03-16 19:06:17.387][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 19:06:17.388][INF] 任务完成: 查询CDK
+[2026-03-16 19:06:17.388][INF] 开始执行任务: 更新资源
+[2026-03-16 19:06:17.388][INF] >>> 任务 播放音频 开始.
+[2026-03-16 19:06:17.437][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 19:06:17.437][INF] 任务完成: 更新资源
+[2026-03-16 19:06:17.494][INF] >>> 任务 播放音频 完成.
+[2026-03-16 19:06:17.498][INF] 任务已全部完成！
+(用时 0h 0m 54s)
+[2026-03-16 19:06:27.266][INF] MFA Closed!
+[2026-03-16 19:10:12.567][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 19:10:12.586][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 19:10:12.606][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 19:10:12.607][INF] Args: {}
+[2026-03-16 19:10:12.607][INF] MFA version: v2.10.9
+[2026-03-16 19:10:12.607][INF] .NET version: .NET 10.0.3
+[2026-03-16 19:10:13.072][INF] Initializing LanguageManager...
+[2026-03-16 19:10:13.177][INF] Loading Configurations...
+[2026-03-16 19:10:13.199][INF] Current Configuration: Default
+[2026-03-16 19:10:13.259][INF] System sleep allowed.
+[2026-03-16 19:10:13.261][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 19:10:13.262][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 19:10:13.266][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 19:10:13.266][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 19:10:13.314][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 19:10:13.320][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:10:13.370][INF] Resource version: 1.0.0
+[2026-03-16 19:10:13.371][INF] MaaFramework version: v5.8.1
+[2026-03-16 19:10:13.397][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:10:13.446][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 19:10:13.453][INF] 窗口位置已加载: X=78, Y=78
+[2026-03-16 19:10:13.653][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 19:10:13.688][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 19:10:13.800][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:10:13.802][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:10:14.119][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:10:14.120][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:10:14.162][INF] UI initialization started
+[2026-03-16 19:10:14.561][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 19:10:14.866][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 19:10:14.867][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 19:10:14.992][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 19:10:15.035][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 19:10:15.144][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 19:10:15.146][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 19:10:15.147][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 19:10:15.147][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 19:10:15.150][INF] 正在载入资源
+[2026-03-16 19:10:15.150][INF] 正在连接至模拟器......
+[2026-03-16 19:10:15.150][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 19:10:15.151][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 19:10:15.249][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args)
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths)
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass128_1.<InitializeMaaTasker>b__2()
+   at MFAAvalonia.Helper.TaskManager.<>c__DisplayClass4_0`1.<RunTaskAsync>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog, Boolean noMessage)
+[2026-03-16 19:10:15.249][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 19:10:15.250][INF] [Record] 资源加载失败！
+[2026-03-16 19:10:15.250][ERR] System.Exception: Connection failed after all retries
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.HandleDeviceConnectionAsync(CancellationToken token, Boolean showMessage)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass192_0.<<InitializeConnectionTasksAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.ValueType.MFATask.Run(CancellationToken token)
+[2026-03-16 19:10:15.251][INF] Stop Status: FAILED
+[2026-03-16 19:10:15.253][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 19:10:15.256][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 19:10:15.257][INF] 开始执行任务: 查询CDK
+[2026-03-16 19:10:15.258][INF] 任务完成: 查询CDK
+[2026-03-16 19:10:15.258][INF] 开始执行任务: 更新资源
+[2026-03-16 19:10:15.262][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 19:10:15.262][INF] 任务完成: 更新资源
+[2026-03-16 19:10:15.269][INF] 任务运行失败！
+[2026-03-16 19:10:15.866][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 19:13:13.358][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 19:13:13.378][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 19:13:13.398][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 19:13:13.401][INF] Args: {}
+[2026-03-16 19:13:13.401][INF] MFA version: v2.10.9
+[2026-03-16 19:13:13.401][INF] .NET version: .NET 10.0.3
+[2026-03-16 19:13:13.884][INF] Initializing LanguageManager...
+[2026-03-16 19:13:13.988][INF] Loading Configurations...
+[2026-03-16 19:13:14.011][INF] Current Configuration: Default
+[2026-03-16 19:13:14.072][INF] System sleep allowed.
+[2026-03-16 19:13:14.074][INF] HotkeyPrimaryElection: 无法成为主进程，已有其他实例持有互斥锁
+[2026-03-16 19:13:14.074][INF] GlobalHotkeyService: 作为子进程初始化
+[2026-03-16 19:13:14.076][INF] GlobalHotkeyService: 开始连接主进程...
+[2026-03-16 19:13:14.076][INF] GlobalHotkeyService: 连接尝试 1/10...
+[2026-03-16 19:13:14.077][INF] HotkeyIpcClient: 端口文件读取结果 = 52718
+[2026-03-16 19:13:14.077][INF] HotkeyIpcClient: 尝试连接文件中的端口 52718
+[2026-03-16 19:13:14.078][INF] HotkeyIpcClient: 尝试连接端口 52718...
+[2026-03-16 19:13:14.091][INF] HotkeyIpcClient: TCP 连接成功，端口 52718
+[2026-03-16 19:13:14.092][INF] HotkeyIpcClient: 发送连接请求
+[2026-03-16 19:13:14.119][INF] HotkeyIpcClient: 等待连接确认...
+[2026-03-16 19:13:14.126][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 19:13:14.132][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:13:14.139][INF] HotkeyIpcServer: 客户端连接 - 18496_f32625aa04144bf0ba7c96a94cb1b57e
+[2026-03-16 19:13:14.140][INF] HotkeyIpcClient: 收到响应 - {"type":7,"senderId":2580,"timestamp":1773659594138,"sequenceNumber":1}
+[2026-03-16 19:13:14.142][INF] HotkeyIpcClient: 已连接到主进程，端口=52718, ClientId=18496_f32625aa04144bf0ba7c96a94cb1b57e
+[2026-03-16 19:13:14.143][INF] HotkeyIpcClient: 文件端口 52718 连接结果 = True
+[2026-03-16 19:13:14.143][INF] GlobalHotkeyService: 成功连接到主进程，注册 0 个热键
+[2026-03-16 19:13:14.174][INF] Resource version: 1.0.0
+[2026-03-16 19:13:14.174][INF] MaaFramework version: v5.8.1
+[2026-03-16 19:13:14.202][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:13:14.255][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 19:13:14.261][INF] 窗口位置已加载: X=78, Y=78
+[2026-03-16 19:13:14.465][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 19:13:14.502][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 19:13:14.949][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:13:14.993][INF] UI initialization started
+[2026-03-16 19:13:18.571][INF] MFA Closed!
+[2026-03-16 19:13:21.911][INF] MFA Closed!
+[2026-03-16 19:13:22.909][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 19:13:22.928][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 19:13:22.948][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 19:13:22.950][INF] Args: {}
+[2026-03-16 19:13:22.950][INF] MFA version: v2.10.9
+[2026-03-16 19:13:22.950][INF] .NET version: .NET 10.0.3
+[2026-03-16 19:13:23.417][INF] Initializing LanguageManager...
+[2026-03-16 19:13:23.523][INF] Loading Configurations...
+[2026-03-16 19:13:23.545][INF] Current Configuration: Default
+[2026-03-16 19:13:23.607][INF] System sleep allowed.
+[2026-03-16 19:13:23.609][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 19:13:23.610][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 19:13:23.614][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 19:13:23.614][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 19:13:23.662][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 19:13:23.668][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:13:23.719][INF] Resource version: 1.0.0
+[2026-03-16 19:13:23.719][INF] MaaFramework version: v5.8.1
+[2026-03-16 19:13:23.746][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:13:23.796][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 19:13:23.800][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 19:13:24.005][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 19:13:24.045][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 19:13:24.162][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:13:24.164][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:13:24.472][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:13:24.472][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:13:24.517][INF] UI initialization started
+[2026-03-16 19:13:24.924][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 19:13:25.228][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 19:13:25.228][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 19:13:25.333][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 19:13:25.371][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 19:13:25.466][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 19:13:25.468][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 19:13:25.469][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 19:13:25.469][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 19:13:25.472][INF] 正在连接至模拟器......
+[2026-03-16 19:13:25.472][INF] 正在载入资源
+[2026-03-16 19:13:25.472][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 19:13:25.472][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 19:13:25.555][ERR] MaaFramework.Binding.MaaJobStatusException: IMaaResource failed to load resources. MaaJobStatus cannot be Failed.
+F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+   at MaaFramework.Binding.MaaJobStatusExtensions.ThrowIfNot(MaaJobStatus current, MaaJobStatus correct, String message, Object[] args)
+   at MaaFramework.Binding.MaaResource..ctor(CheckStatusOption check, IEnumerable`1 bundlePaths)
+   at MaaFramework.Binding.MaaResource..ctor(IEnumerable`1 bundlePaths)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass128_1.<InitializeMaaTasker>b__2()
+   at MFAAvalonia.Helper.TaskManager.<>c__DisplayClass4_0`1.<RunTaskAsync>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.TaskManager.RunTaskAsync[TResult](Func`1 function, CancellationToken token, Action`1 handleError, String name, Boolean catchException, Boolean shouldLog, Boolean noMessage)
+[2026-03-16 19:13:25.555][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 19:13:25.556][ERR] System.Exception: Connection failed after all retries
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.HandleDeviceConnectionAsync(CancellationToken token, Boolean showMessage)
+   at MFAAvalonia.Extensions.MaaFW.MaaProcessor.<>c__DisplayClass192_0.<<InitializeConnectionTasksAsync>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at MFAAvalonia.Helper.ValueType.MFATask.Run(CancellationToken token)
+[2026-03-16 19:13:25.557][INF] [Record] 资源加载失败！
+[2026-03-16 19:13:25.557][INF] Stop Status: FAILED
+[2026-03-16 19:13:25.559][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 19:13:25.563][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 19:13:25.564][INF] 开始执行任务: 查询CDK
+[2026-03-16 19:13:25.565][INF] 任务完成: 查询CDK
+[2026-03-16 19:13:25.565][INF] 开始执行任务: 更新资源
+[2026-03-16 19:13:25.568][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 19:13:25.568][INF] 任务完成: 更新资源
+[2026-03-16 19:13:25.571][INF] 任务运行失败！
+[2026-03-16 19:13:26.228][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 19:13:33.196][INF] MFA Closed!
+[2026-03-16 19:16:04.141][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-03-16 19:16:04.160][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-03-16 19:16:04.179][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-03-16 19:16:04.181][INF] Args: {}
+[2026-03-16 19:16:04.181][INF] MFA version: v2.10.9
+[2026-03-16 19:16:04.181][INF] .NET version: .NET 10.0.3
+[2026-03-16 19:16:04.654][INF] Initializing LanguageManager...
+[2026-03-16 19:16:04.758][INF] Loading Configurations...
+[2026-03-16 19:16:04.780][INF] Current Configuration: Default
+[2026-03-16 19:16:04.842][INF] System sleep allowed.
+[2026-03-16 19:16:04.844][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-03-16 19:16:04.844][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-03-16 19:16:04.849][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-03-16 19:16:04.849][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-03-16 19:16:04.894][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-03-16 19:16:04.900][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:16:04.950][INF] Resource version: 1.0.0
+[2026-03-16 19:16:04.950][INF] MaaFramework version: v5.8.1
+[2026-03-16 19:16:04.976][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:16:05.026][INF] 窗口大小已加载: width=1634, height=993
+[2026-03-16 19:16:05.030][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-03-16 19:16:05.231][WRN] 跨平台数据解密失败: 参数错误。
+[2026-03-16 19:16:05.267][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-03-16 19:16:05.379][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-03-16 19:16:05.381][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-03-16 19:16:05.700][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:16:05.701][INF] [懒加载] 所有实例加载完成
+[2026-03-16 19:16:05.744][INF] UI initialization started
+[2026-03-16 19:16:06.140][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-03-16 19:16:06.445][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-03-16 19:16:06.446][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-03-16 19:16:06.568][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-03-16 19:16:06.609][INF] [TaskPipelineMerge] Task#1 Name=[冠位戴冠战] Entry=[冠位戴冠战-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-职介": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_lancer.png"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-等级副本": {
+      "recognition": {
+        "type": "TemplateMatch",
+        "param": {
+          "template": [
+            "grand_100+++.png"
+          ]
+        }
+      }
+    }
+  }
+]
+[2026-03-16 19:16:06.714][INF] MFA异步任务 启动任务 开始.
+[2026-03-16 19:16:06.715][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-03-16 19:16:06.717][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-03-16 19:16:06.717][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-03-16 19:16:06.720][INF] 正在连接至模拟器......
+[2026-03-16 19:16:06.720][INF] 正在载入资源
+[2026-03-16 19:16:06.721][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-03-16 19:16:06.721][INF] MFA异步任务 资源检测 开始.
+[2026-03-16 19:16:06.796][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-03-16 19:16:06.797][INF] Use GPU: succeed
+[2026-03-16 19:16:06.797][INF] GPU acceleration: Auto
+[2026-03-16 19:16:06.797][INF] MFA异步任务 控制器检测 开始.
+[2026-03-16 19:16:06.798][INF] Loading MAA Controller Configuration...
+[2026-03-16 19:16:06.799][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-03-16 19:16:06.799][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-03-16 19:16:06.799][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-03-16 19:16:06.799][INF] AdbSerial: 127.0.0.1:16384
+[2026-03-16 19:16:06.799][INF] ScreenCap: EmulatorExtras
+[2026-03-16 19:16:06.799][INF] Input: All
+[2026-03-16 19:16:06.799][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-03-16 19:16:06.944][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-03-16 19:16:07.148][INF] Registered built-in special task actions
+[2026-03-16 19:16:07.148][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-03-16 19:16:07.148][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-03-16 19:16:07.149][INF] Maafw debug mode: False
+[2026-03-16 19:16:07.446][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-03-16 19:16:07.491][INF] MFA异步任务 截图测试 开始.
+[2026-03-16 19:16:07.513][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-03-16 19:16:07.513][INF] 截图耗时: 10ms(EmulatorExtras)
+[2026-03-16 19:16:07.518][INF] 开始任务: 冠位戴冠战
+[2026-03-16 19:16:07.518][INF] MFA异步任务 队列任务 开始.
+[2026-03-16 19:17:00.551][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-03-16 19:17:00.551][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-03-16 19:17:00.552][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-03-16 19:17:00.554][INF] MFA异步任务 启动检测 开始.
+[2026-03-16 19:17:00.555][INF] 开始执行任务: 查询CDK
+[2026-03-16 19:17:00.555][INF] Stop Status: SUCCEEDED
+[2026-03-16 19:17:00.555][INF] MFA异步任务 停止maafw任务 开始.
+[2026-03-16 19:17:00.556][INF] 任务完成: 查询CDK
+[2026-03-16 19:17:00.556][INF] 开始执行任务: 更新资源
+[2026-03-16 19:17:00.557][INF] >>> 任务 播放音频 开始.
+[2026-03-16 19:17:00.595][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-03-16 19:17:00.595][INF] 任务完成: 更新资源
+[2026-03-16 19:17:00.653][INF] >>> 任务 播放音频 完成.
+[2026-03-16 19:17:00.661][INF] 任务已全部完成！
+(用时 0h 0m 54s)
+[2026-03-16 19:19:02.552][INF] MFA Closed!

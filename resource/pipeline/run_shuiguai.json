@@ -1,0 +1,149 @@
+{
+    "水怪活动-首页列表": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shuiguai_tittle.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "timeout": 2000,
+        "next": [
+            "水怪-上次副本选择"
+        ],
+        "on_error": [
+            "水怪-未找到副本"
+        ]
+    },
+    "水怪活动-开始": {
+        "next": [
+            "水怪活动-首页列表",
+            "[JumpBack]如果需要关闭弹窗_水怪"
+        ],
+        "on_error": [
+            "未找到水怪入口"
+        ]
+    },
+    "未找到水怪入口": {
+        "action": {
+            "type": "StopTask",
+            "param": {}
+        },
+        "timeout": 2000,
+        "focus": {
+            "Node.Action.Starting": "执行失败，请检查"
+        }
+    },
+    "如果需要关闭弹窗_水怪": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close_botton.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 2000
+    },
+    "水怪-上次副本选择": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shuiguai_dungeon.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "水怪-选择90++"
+        ]
+    },
+    "水怪-未找到副本": {
+        "action": {
+            "type": "StopTask",
+            "param": {}
+        }
+    },
+    "水怪-选择90++": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "90++"
+                ],
+                "threshold": 0.9
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "水怪-BBC脚本运行"
+        ]
+    },
+    "水怪-BBC脚本运行": {
+        "action": {
+            "type": "Command",
+            "param": {
+                "exec": "run_bbc\\run_bbc.exe",
+                "detach": false
+            }
+        },
+        "post_delay": 10000,
+        "focus": {
+            "Node.Recognition.Starting": "打开BBC中，请尽量不要移动鼠标，并将bbc窗口置于主屏幕",
+            "Node.Action.Succeeded": "等待任务完成，BBC正常运行后，可以自由操作。"
+        },
+        "next": [
+            "水怪-完成",
+            "[JumpBack]水怪-等待空节点"
+        ],
+        "on_error": [
+            "水怪-未识别到结束"
+        ]
+    },
+    "水怪-完成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "shuiguai_ap_0.png"
+                ]
+            }
+        },
+        "timeout": 99999999,
+        "rate_limit": 5000,
+        "focus": {
+            "Node.Recognition.Succeeded": "任务完成",
+            "Node.Recognition.Failed": "没有识别到任务完成"
+        }
+    },
+    "水怪-等待空节点": {
+        "max_hit": 100,
+        "pre_delay": 10000,
+        "action": {
+            "type": "Click",
+            "param": {}
+        }
+    },
+    "水怪-未识别到结束": {
+        "action": {
+            "type": "StopTask",
+            "param": {}
+        }
+    }
+}

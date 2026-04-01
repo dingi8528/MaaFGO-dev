@@ -23,10 +23,10 @@
                 ]
             }
         },
-        "timeout": 40000,
         "post_delay": 5000,
+        "timeout": 40000,
         "focus": {
-            "Node.Recognition.Starting": "检测是否登录成功"
+            "Node.Recognition.Starting": "等待到达主界面"
         },
         "next": [
             "确认抵达主界面流程"
@@ -128,10 +128,10 @@
     },
     "关闭主界面弹窗": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": [
-                    "close_botton.png"
+                "expected": [
+                    "閉じる"
                 ]
             }
         },
@@ -139,7 +139,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 2000
+        "post_delay": 4000
     },
     "最终确认抵达主界面": {
         "recognition": {
@@ -177,14 +177,16 @@
     },
     "确认抵达主界面流程": {
         "post_delay": 2000,
-        "focus": {
-            "Node.Recognition.Starting": "二次检测"
-        },
         "next": [
             "[JumpBack]关闭主界面弹窗",
             "如果要SKIP",
             "如果有奖励",
+            "[JumpBack]如果要关闭",
+            "[JumpBack]登录流程持续识别",
             "最终确认抵达主界面"
+        ],
+        "on_error": [
+            "抵达主界面错误"
         ]
     },
     "是否要更新": {
@@ -203,8 +205,8 @@
         "post_delay": 5000
     },
     "等待更新完成": {
-        "post_delay": 5000,
-        "max_hit": 20
+        "max_hit": 20,
+        "post_delay": 5000
     },
     "异常启动弹窗": {
         "recognition": {
@@ -219,5 +221,18 @@
             "type": "Click",
             "param": {}
         }
+    },
+    "抵达主界面错误": {
+        "action": {
+            "type": "StopTask",
+            "param": {}
+        },
+        "focus": {
+            "Node.Recognition.Failed": "未成功抵达主界面，脚本中止"
+        }
+    },
+    "登录流程持续识别": {
+        "max_hit": 4,
+        "post_delay": 5000
     }
 }

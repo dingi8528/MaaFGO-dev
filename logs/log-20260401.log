@@ -1,0 +1,187 @@
+[2026-04-01 08:29:57.315][INF] Added DLL directory (Windows API): F:\Game_AUTO\MaaFGO\MFAAvalonia\libs
+[2026-04-01 08:29:57.333][INF] Native library resolver setup completed using AssemblyLoadContext.ResolvingUnmanagedDll
+[2026-04-01 08:29:57.352][INF] MaaFramework runtimes: [
+  "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\runtimes\\win-x64\\native"
+]
+[2026-04-01 08:29:57.354][INF] Args: {}
+[2026-04-01 08:29:57.354][INF] MFA version: v2.10.9
+[2026-04-01 08:29:57.354][INF] .NET version: .NET 10.0.3
+[2026-04-01 08:29:57.787][INF] Initializing LanguageManager...
+[2026-04-01 08:29:57.889][INF] Loading Configurations...
+[2026-04-01 08:29:57.910][INF] Current Configuration: Default
+[2026-04-01 08:29:57.971][INF] System sleep allowed.
+[2026-04-01 08:29:57.984][INF] HotkeyPrimaryElection: 成为主进程（创建了新的全局互斥锁）
+[2026-04-01 08:29:57.984][INF] GlobalHotkeyService: 作为主进程初始化
+[2026-04-01 08:29:57.988][INF] HotkeyIpcServer: 端口文件已保存到 C:\Users\MSI\AppData\Local\Temp\MFAAvalonia\hotkey_ipc_port.txt
+[2026-04-01 08:29:57.988][INF] HotkeyIpcServer: 启动 TCP 服务端，端口 52718
+[2026-04-01 08:29:58.037][WRN] MaaProcessor.Interface is not initialized yet.
+[2026-04-01 08:29:58.043][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-04-01 08:29:58.091][INF] Resource version: 1.0.0
+[2026-04-01 08:29:58.091][INF] MaaFramework version: v5.8.1
+[2026-04-01 08:29:58.115][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-04-01 08:29:58.163][INF] 窗口大小已加载: width=1634, height=993
+[2026-04-01 08:29:58.167][INF] 保存的窗口位置 (-32000, -32000) 不在有效屏幕范围内，使用默认居中位置
+[2026-04-01 08:29:58.356][WRN] 跨平台数据解密失败: 参数错误。
+[2026-04-01 08:29:58.387][WRN] 跨平台数据解密失败: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+[2026-04-01 08:29:58.496][INF] [调试] instances 目录中实际存在的实例文件数量: 1, ID列表: [339d7c15]
+[2026-04-01 08:29:58.498][INF] [懒加载] 已加载当天有定时任务的实例
+[2026-04-01 08:29:58.734][INF] [懒加载] 所有实例加载完成
+[2026-04-01 08:29:58.735][INF] [懒加载] 所有实例加载完成
+[2026-04-01 08:29:58.776][INF] UI initialization started
+[2026-04-01 08:29:59.165][INF] MFA异步任务 公告和最新版本检测 开始.
+[2026-04-01 08:29:59.470][INF] Reading saved ADB device from configuration, using fingerprint matching.
+[2026-04-01 08:29:59.471][INF] Saved device fingerprint: MuMu安卓设备-MuMuPlayer12 v5|0|127.0.0.1|16384
+[2026-04-01 08:29:59.598][INF] Found matching device by fingerprint: MuMu安卓设备-MuMuPlayer12 v5 (127.0.0.1:16384)
+[2026-04-01 08:29:59.637][INF] [TaskPipelineMerge] Task#1 Name=[打开bbc] Entry=[运行BBC] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  }
+]
+[2026-04-01 08:29:59.638][INF] [TaskPipelineMerge] Task#2 Name=[启动游戏] Entry=[启动FGO] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  },
+  {
+    "启动FGO": {
+      "action": {
+        "type": "StartApp",
+        "param": {
+          "package": "com.aniplex.fategrandorder"
+        }
+      }
+    }
+  }
+]
+[2026-04-01 08:29:59.639][INF] [TaskPipelineMerge] Task#3 Name=[水怪活动] Entry=[水怪活动-开始] PipelineList=[
+  {},
+  {
+    "运行BBC": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\BBchannel\\启动.cmd"
+        }
+      }
+    }
+  },
+  {
+    "冠位戴冠战-BBC脚本运行": {
+      "action": {
+        "type": "Command",
+        "param": {
+          "exec": "F:\\Game_AUTO\\MaaFGO\\MFAAvalonia\\run_bbc\\bbctools.cmd"
+        }
+      }
+    }
+  }
+]
+[2026-04-01 08:29:59.738][INF] MFA异步任务 启动任务 开始.
+[2026-04-01 08:29:59.739][INF] MFA异步任务 启动附加开始脚本 开始.
+[2026-04-01 08:29:59.740][INF] >>> MFA异步任务 启动附加开始脚本 已完成.
+[2026-04-01 08:29:59.741][INF] >>> MFA异步任务 启动任务 已完成.
+[2026-04-01 08:29:59.744][INF] 正在连接至模拟器......
+[2026-04-01 08:29:59.744][INF] 正在载入资源
+[2026-04-01 08:29:59.745][INF] Resource: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource
+[2026-04-01 08:29:59.745][INF] MFA异步任务 资源检测 开始.
+[2026-04-01 08:29:59.833][INF] >>> MFA异步任务 资源检测 已完成.
+[2026-04-01 08:29:59.834][INF] Use GPU: succeed
+[2026-04-01 08:29:59.834][INF] GPU acceleration: Auto
+[2026-04-01 08:29:59.834][INF] MFA异步任务 控制器检测 开始.
+[2026-04-01 08:29:59.834][INF] Loading MAA Controller Configuration...
+[2026-04-01 08:29:59.835][INF] 触控模式:All,捕获模式:EmulatorExtras
+[2026-04-01 08:29:59.835][INF] Name: MuMu安卓设备-MuMuPlayer12 v5
+[2026-04-01 08:29:59.835][INF] AdbPath: C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe
+[2026-04-01 08:29:59.835][INF] AdbSerial: 127.0.0.1:16384
+[2026-04-01 08:29:59.835][INF] ScreenCap: EmulatorExtras
+[2026-04-01 08:29:59.836][INF] Input: All
+[2026-04-01 08:29:59.836][INF] Config: {"extras":{"mumu":{"enable":true,"index":0,"path":"C:/Program Files/Netease/MuMu Player 12"}}
+[2026-04-01 08:30:00.041][INF] >>> MFA异步任务 控制器检测 已完成.
+[2026-04-01 08:30:00.238][INF] Registered built-in special task actions
+[2026-04-01 08:30:00.238][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\.\resource\custom
+[2026-04-01 08:30:00.238][INF] Custom directory not found: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\custom
+[2026-04-01 08:30:00.239][INF] Maafw debug mode: False
+[2026-04-01 08:30:00.468][WRN] 公告文件夹不存在: F:\Game_AUTO\MaaFGO\MFAAvalonia\resource\announcement
+[2026-04-01 08:30:00.571][INF] MFA异步任务 截图测试 开始.
+[2026-04-01 08:30:00.591][INF] >>> MFA异步任务 截图测试 已完成.
+[2026-04-01 08:30:00.591][INF] 截图耗时: 8ms(EmulatorExtras)
+[2026-04-01 08:30:00.596][INF] 开始任务: 打开bbc
+[2026-04-01 08:30:00.596][INF] MFA异步任务 队列任务 开始.
+[2026-04-01 08:30:01.356][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-04-01 08:30:01.358][INF] MFA异步任务 队列任务 开始.
+[2026-04-01 08:30:01.360][INF] 开始任务: 启动游戏
+[2026-04-01 08:30:12.402][INF] 尚未检测到登录成功
+[2026-04-01 08:30:18.381][INF] 尚未检测到登录成功
+[2026-04-01 08:30:24.067][INF] 尚未检测到登录成功
+[2026-04-01 08:30:52.749][INF] 等待到达主界面
+[2026-04-01 08:30:53.736][INF] 等待到达主界面
+[2026-04-01 08:30:54.733][INF] 等待到达主界面
+[2026-04-01 08:30:55.735][INF] 等待到达主界面
+[2026-04-01 08:30:56.737][INF] 等待到达主界面
+[2026-04-01 08:30:57.739][INF] 等待到达主界面
+[2026-04-01 08:30:58.103][INF] [内存管理]释放了15.25 MB (28.7%)
+[2026-04-01 08:31:31.582][INF] 成功抵达主界面
+[2026-04-01 08:31:31.987][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-04-01 08:31:31.988][INF] MFA异步任务 队列任务 开始.
+[2026-04-01 08:31:31.989][INF] 开始任务: 水怪活动
+[2026-04-01 08:31:53.025][INF] 执行失败，请检查
+[2026-04-01 08:31:53.227][INF] >>> MFA异步任务 队列任务 已完成.
+[2026-04-01 08:31:53.228][INF] MFA异步任务 启动附加结束脚本 开始.
+[2026-04-01 08:31:53.228][INF] >>> MFA异步任务 启动附加结束脚本 已完成.
+[2026-04-01 08:31:53.232][INF] MFA异步任务 启动检测 开始.
+[2026-04-01 08:31:53.232][INF] 开始执行任务: 查询CDK
+[2026-04-01 08:31:53.233][INF] Stop Status: SUCCEEDED
+[2026-04-01 08:31:53.233][INF] MFA异步任务 停止maafw任务 开始.
+[2026-04-01 08:31:53.234][INF] 任务完成: 查询CDK
+[2026-04-01 08:31:53.234][INF] 开始执行任务: 更新资源
+[2026-04-01 08:31:53.235][INF] >>> 任务 播放音频 开始.
+[2026-04-01 08:31:53.278][ERR] System.Exception: 该资源操作暂不支持 Mirror酱
+   at MFAAvalonia.Helper.VersionChecker.GetDownloadUrlFromMirror(String version, String resId, String cdk, String& url, String& latestVersion, String& sha256, Boolean& isFull, String userAgent, Boolean isUI, Boolean onlyCheck, String currentVersion, Boolean showResponse, Boolean saveAnnouncement)
+   at MFAAvalonia.Helper.VersionChecker.CheckForResourceUpdatesAsync(Boolean isGithub)
+[2026-04-01 08:31:53.278][INF] 任务完成: 更新资源
+[2026-04-01 08:31:53.334][INF] >>> 任务 播放音频 完成.
+[2026-04-01 08:31:53.338][INF] 任务已全部完成！
+(用时 0h 1m 53s)
+[2026-04-01 08:47:28.208][INF] [内存管理]释放了11.28 MB (22.0%)
+[2026-04-01 08:52:28.230][INF] [内存管理]释放了4.22 MB (9.6%)
+[2026-04-01 08:57:28.256][INF] [内存管理]释放了4.21 MB (9.6%)
+[2026-04-01 09:02:28.281][INF] [内存管理]释放了4.16 MB (9.7%)
+[2026-04-01 09:07:28.299][INF] [内存管理]释放了4.34 MB (10.1%)
+[2026-04-01 09:12:28.319][INF] [内存管理]释放了4.17 MB (9.8%)
+[2026-04-01 09:17:28.343][INF] [内存管理]释放了4.41 MB (10.3%)
+[2026-04-01 09:17:58.096][INF] MFA Closed!

@@ -1,26 +1,4 @@
 {
-    "冠位戴冠战-等待空节点": {
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "pre_delay": 10000
-    },
-    "如果需要关闭弹窗": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "close_botton.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "post_delay": 2000
-    },
     "冠位戴冠战-职介": {
         "recognition": {
             "type": "TemplateMatch",
@@ -93,21 +71,37 @@
         "next": [
             "冠位戴冠战列表",
             "[JumpBack]如果需要关闭弹窗",
-            "[JumpBack]右侧下滑-冠位戴冠战列表",
+            "[JumpBack]右侧下滑-冠位戴冠战列表"
+        ],
+        "on_error": [
             "未找到戴冠战入口"
         ]
     },
     "未找到戴冠战入口": {
-        "max_hit": 10,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "grand001.png"
+                ]
+            }
+        },
+        "timeout": 2000,
+        "rate_limit": 10000,
         "focus": {
-            "Node.Recognition.Starting": "未找到戴冠战入口！脚本中止"
+            "Node.Recognition.Failed": {
+                "content": "❌ 执行失败，请检查环境",
+                "display": "modal"
+            }
         }
     },
     "冠位戴冠战-职介开始": {
         "post_delay": 3000,
         "next": [
             "冠位戴冠战-职介",
-            "[JumpBack]冠位戴冠战-查找职介",
+            "[JumpBack]冠位戴冠战-查找职介"
+        ],
+        "on_error": [
             "未找到戴冠战入口2"
         ]
     },
@@ -128,7 +122,9 @@
             "冠位戴冠战-等级副本",
             "[JumpBack]右侧下滑2",
             "[JumpBack]右侧上滑1",
-            "[JumpBack]右侧下滑3",
+            "[JumpBack]右侧下滑3"
+        ],
+        "on_error": [
             "未找到戴冠战入口3"
         ]
     },
@@ -284,6 +280,28 @@
             }
         },
         "max_hit": 10,
+        "post_delay": 2000
+    },
+    "冠位戴冠战-等待空节点": {
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "pre_delay": 10000
+    },
+    "如果需要关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "close_botton.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "post_delay": 2000
     }
 }

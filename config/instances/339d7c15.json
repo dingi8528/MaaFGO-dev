@@ -5,6 +5,7 @@
     "启动游戏<|||>启动FGO",
     "冠位戴冠战<|||>冠位戴冠战-开始",
     "启动检测<|||>冠位戴冠战-BBC脚本运行",
+    "水怪活动<|||>水怪活动-开始",
     "带Custom的任务<|||>MyTask4",
     "参数任务<|||>MyTask3",
     "选项任务<|||>MyTask2",
@@ -20,7 +21,8 @@
     {
       "name": "打开bbc",
       "entry": "运行BBC",
-      "default_check": false
+      "default_check": true,
+      "description": "### 全局变量形式例如：\"F:\\BBchannel\\启动.cmd\"，不用带双引号 \n### 填写完可以运行一下看看BBC有没有正常打开 \n### 建议把打开bbc放到第一步 \n### bbc需要在设置里勾选【启动时自动连接前次设备】，并且将正确的队伍放到第一位"
     },
     {
       "name": "启动游戏",
@@ -37,7 +39,7 @@
     {
       "name": "冠位戴冠战",
       "entry": "冠位戴冠战-开始",
-      "default_check": true,
+      "default_check": false,
       "option": [
         {
           "name": "选择冠位职介",
@@ -53,11 +55,16 @@
       "name": "启动检测",
       "entry": "冠位戴冠战-BBC脚本运行",
       "default_check": false
+    },
+    {
+      "name": "水怪活动",
+      "entry": "水怪活动-开始",
+      "default_check": true
     }
   ],
   "AdbDevice": {
     "InfoHandle": {
-      "value": 2640015187728
+      "value": 2767037143664
     },
     "Name": "MuMu安卓设备-MuMuPlayer12 v5",
     "AdbPath": "C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe",
