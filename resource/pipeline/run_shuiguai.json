@@ -12,7 +12,6 @@
             "type": "Click",
             "param": {}
         },
-        "timeout": 2000,
         "next": [
             "水怪-上次副本选择"
         ],
@@ -97,10 +96,9 @@
     },
     "水怪-BBC脚本运行": {
         "action": {
-            "type": "Command",
+            "type": "Custom",
             "param": {
-                "exec": "run_bbc\\run_bbc.exe",
-                "detach": false
+                "custom_action": "ConnectBBChannel_popup_mianze"
             }
         },
         "post_delay": 10000,
@@ -109,6 +107,7 @@
             "Node.Action.Succeeded": "等待任务完成，BBC正常运行后，可以自由操作。"
         },
         "next": [
+            "[JumpBack]BBC-捕获主窗口",
             "水怪-完成",
             "[JumpBack]水怪-等待空节点"
         ],

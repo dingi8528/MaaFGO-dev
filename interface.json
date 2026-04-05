@@ -51,6 +51,12 @@
             ]
         }
     ],
+    "agent": {
+        "child_exec": "python",
+        "child_args": [
+            "{PROJECT_DIR}/agent/main.py"
+        ]
+    },
     // 可选的 agent 示例
     // "agent": {
     //     "child_exec": "python",
@@ -89,6 +95,10 @@
         {
             "name": "启动检测",
             "entry": "冠位戴冠战-BBC脚本运行"
+        },
+        {
+            "name": "测试节点",
+            "entry": "test"
         }
 
     ],
@@ -334,6 +344,14 @@
             ],
             "pipeline_override": {
                 "冠位戴冠战-BBC脚本运行": {
+                    "action": {
+                        "type": "Command",
+                        "param": {
+                            "exec": "{内置脚本路径(AUTO-MAS专用)}"
+                        }
+                    }
+                },
+                "水怪-BBC脚本运行": {
                     "action": {
                         "type": "Command",
                         "param": {

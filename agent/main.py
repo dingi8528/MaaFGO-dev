@@ -1,0 +1,25 @@
+import sys
+
+from maa.agent.agent_server import AgentServer
+from maa.toolkit import Toolkit
+
+import my_action
+import my_reco
+import ConnectBBChannel
+import ConnectBBChannel_popup_mianze
+
+def main():
+    Toolkit.init_option("./")
+
+
+
+    socket_id = sys.argv[-1]
+
+    AgentServer.start_up(socket_id)
+    AgentServer.join()
+    AgentServer.shut_down()
+
+
+if __name__ == "__main__":
+    main()
+

@@ -1,0 +1,44 @@
+{
+    "test": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "my_reco_222"
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "my_action_111"
+            }
+        },
+        "focus": {
+            "Node.Action.Starting": "第一步动作开始",
+            "Node.Recognition.Starting": "识别开始",
+            "Node.Action.Succeeded": "动作完成"
+        },
+        "next": [
+            "test202"
+        ]
+    },
+    "test202": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "MENU"
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ConnectBBChannel"
+            }
+        },
+        "focus": {
+            "Node.Action.Starting": "执行完成",
+            "Node.Recognition.Starting": "开始识别"
+        }
+    }
+}

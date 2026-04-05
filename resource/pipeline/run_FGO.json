@@ -139,7 +139,10 @@
             "type": "Click",
             "param": {}
         },
-        "post_delay": 4000
+        "post_delay": 4000,
+        "focus": {
+            "Node.Action.Starting": "关闭弹窗"
+        }
     },
     "最终确认抵达主界面": {
         "recognition": {

@@ -6,5 +6,43 @@
                 "exec": "F:\\BBchannel\\启动.cmd"
             }
         }
+    },
+    "BBC-关闭弹窗": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    13
+                ]
+            }
+        }
+    },
+    "BBC-操作开始": {
+        "next": [
+            "BBC-关闭弹窗"
+        ]
+    },
+    "BBC-点击开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "BBC_start.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        }
+    },
+    "BBC-捕获主窗口": {
+        "max_hit": 1,
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ConnectBBChannel"
+            }
+        }
     }
 }
