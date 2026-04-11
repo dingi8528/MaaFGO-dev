@@ -14,6 +14,7 @@
         ]
     },
     "右侧下滑-冠位戴冠战列表": {
+        "max_hit": 10,
         "action": {
             "type": "Swipe",
             "param": {
@@ -32,8 +33,7 @@
                     ]
                 ]
             }
-        },
-        "max_hit": 10
+        }
     },
     "冠位戴冠战-查找职介": {
         "recognition": {
@@ -118,6 +118,7 @@
             "type": "Click",
             "param": {}
         },
+        "post_delay": 3000,
         "next": [
             "冠位戴冠战-等级副本",
             "[JumpBack]右侧下滑2",
@@ -135,6 +136,7 @@
         }
     },
     "右侧下滑2": {
+        "max_hit": 10,
         "action": {
             "type": "Swipe",
             "param": {
@@ -154,19 +156,16 @@
                 ]
             }
         },
-        "max_hit": 10,
         "post_delay": 2000
     },
     "冠位戴冠战-等级副本": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": [
-                    "grand_100+++.png"
+                "expected": [
+                    "Lv\\.100\\*\\*★"
                 ],
-                "threshold": [
-                    0.85
-                ]
+                "threshold": 0.85
             }
         },
         "action": {
@@ -229,14 +228,15 @@
                 ]
             }
         },
-        "rate_limit": 5000,
         "timeout": 99999999,
+        "rate_limit": 5000,
         "focus": {
             "Node.Recognition.Succeeded": "任务完成",
             "Node.Recognition.Failed": "没有识别到任务完成"
         }
     },
     "右侧上滑1": {
+        "max_hit": 10,
         "action": {
             "type": "Swipe",
             "param": {
@@ -256,10 +256,10 @@
                 ]
             }
         },
-        "max_hit": 10,
         "post_delay": 2000
     },
     "右侧下滑3": {
+        "max_hit": 10,
         "action": {
             "type": "Swipe",
             "param": {
@@ -279,15 +279,14 @@
                 ]
             }
         },
-        "max_hit": 10,
         "post_delay": 2000
     },
     "冠位戴冠战-等待空节点": {
+        "pre_delay": 10000,
         "action": {
             "type": "Click",
             "param": {}
-        },
-        "pre_delay": 10000
+        }
     },
     "如果需要关闭弹窗": {
         "recognition": {

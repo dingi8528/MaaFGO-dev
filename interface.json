@@ -78,7 +78,7 @@
             "option": [
                 "选择服务器"
             ],
-            "description": "不会自己打开模拟器，请在模拟器运行后再开始"
+            "description": "不会自己打开模拟器，请在模拟器运行后再开始（或者在设置里选择打开模拟器）"
         },
         {
             "name": "冠位戴冠战",
@@ -282,11 +282,12 @@
                     "pipeline_override": {
                         "冠位戴冠战-等级副本": {
                             "recognition": {
-                                "type": "TemplateMatch",
+                                "type": "OCR",
                                 "param": {
-                                    "template": [
-                                        "grand_100++.png"
-                                    ]
+                                    "expected": [
+                                        "Lv\\.100\\*\\*"
+                                    ],
+                                    "threshold": 0.8
                                 }
                             }
                         }
@@ -297,11 +298,12 @@
                     "pipeline_override": {
                         "冠位戴冠战-等级副本": {
                             "recognition": {
-                                "type": "TemplateMatch",
+                                "type": "OCR",
                                 "param": {
-                                    "template": [
-                                        "grand_100+++.png"
-                                    ]
+                                    "expected": [
+                                        "Lv\\.100\\*\\*\\*"
+                                    ],
+                                    "threshold": 0.7
                                 }
                             }
                         }
@@ -318,7 +320,7 @@
                     "name": "bbc路径",
                     "label": "$bbc路径", // 显示名称，支持国际化。优先显示label，未设置时显示name
                     "description": "形式例如：\"F:\\BBchannel\\启动.cmd\",请勿复制快捷方式路径，不用带双引号", // 描述，应支持 文件名、URL、字符串，同时内容支持 markdown，支持国际化
-                    "pipeline_type": "string", // 拼接到 pipeline_override 中的类型
+                    "pipeline_type": "string" // 拼接到 pipeline_override 中的类型
                 }
             ],
             "pipeline_override": {
@@ -339,7 +341,7 @@
                     "name": "内置脚本路径(AUTO-MAS专用)",
                     "label": "$内置脚本路径(AUTO-MAS专用)", // 显示名称，支持国际化。优先显示label，未设置时显示name
                     "description": "如果使用AUTO-MAS启动，需要在此填写MfaFGO里面run_bbc路径下的runbbe.exe的路径", // 描述，应支持 文件名、URL、字符串，同时内容支持 markdown，支持国际化
-                    "pipeline_type": "string", // 拼接到 pipeline_override 中的类型
+                    "pipeline_type": "string" // 拼接到 pipeline_override 中的类型
                 }
             ],
             "pipeline_override": {

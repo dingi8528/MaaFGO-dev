@@ -4,8 +4,8 @@
     "打开bbc<|||>运行BBC",
     "启动游戏<|||>启动FGO",
     "冠位戴冠战<|||>冠位戴冠战-开始",
-    "启动检测<|||>冠位戴冠战-BBC脚本运行",
     "水怪活动<|||>水怪活动-开始",
+    "启动检测<|||>冠位戴冠战-BBC脚本运行",
     "测试节点<|||>test",
     "带Custom的任务<|||>MyTask4",
     "参数任务<|||>MyTask3",
@@ -29,7 +29,7 @@
       "name": "启动游戏",
       "entry": "启动FGO",
       "default_check": true,
-      "description": "不会自己打开模拟器，请在模拟器运行后再开始",
+      "description": "不会自己打开模拟器，请在模拟器运行后再开始（或者在设置里选择打开模拟器）",
       "option": [
         {
           "name": "选择服务器",
@@ -40,11 +40,11 @@
     {
       "name": "冠位戴冠战",
       "entry": "冠位戴冠战-开始",
-      "default_check": false,
+      "default_check": true,
       "option": [
         {
           "name": "选择冠位职介",
-          "index": 2
+          "index": 8
         },
         {
           "name": "选择难度",
@@ -53,14 +53,14 @@
       ]
     },
     {
-      "name": "启动检测",
-      "entry": "冠位戴冠战-BBC脚本运行",
+      "name": "水怪活动",
+      "entry": "水怪活动-开始",
       "default_check": false
     },
     {
-      "name": "水怪活动",
-      "entry": "水怪活动-开始",
-      "default_check": true
+      "name": "启动检测",
+      "entry": "冠位戴冠战-BBC脚本运行",
+      "default_check": false
     },
     {
       "name": "测试节点",
@@ -70,7 +70,7 @@
   ],
   "AdbDevice": {
     "InfoHandle": {
-      "value": 2968106031888
+      "value": 3002487284800
     },
     "Name": "MuMu安卓设备-MuMuPlayer12 v5",
     "AdbPath": "C:/Program Files/Netease/MuMu Player 12/nx_main/adb.exe",
